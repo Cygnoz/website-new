@@ -5,7 +5,10 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    fontFamily: {
+      gilroy: ['Gilroy', 'sans-serif'],
+      questrial: ['Questrial', 'sans-serif'],
+    },    
   },
   plugins: [],
 }
