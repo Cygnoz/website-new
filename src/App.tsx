@@ -1,12 +1,20 @@
-// import { useState } from 'react'
+import { Route, Routes } from "react-router-dom"
+import Footer from "./commonComponents/Footer"
+import Header from "./commonComponents/Header"
+
 
 
 function App() {
-  // const [count, setCount] = useState(0)
+
 
   return (
     <>
-     <div className="text-red-950 text-center">rdfgsdf</div>
+    <Header/>
+    <Routes>
+      <Route/>
+    </Routes>
+    <Footer/>
+    
     </>
   )
 }
