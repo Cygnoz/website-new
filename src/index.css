@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* Define font faces for Gilroy */
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/fonts/gilroy/gilroy-regular.woff2') format('woff2'),
+       url('/fonts/gilroy/gilroy-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/fonts/gilroy/gilroy-bold.woff2') format('woff2'),
+       url('/fonts/gilroy/gilroy-bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Define font-face for Gilroy Light */
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/fonts/gilroy/gilroy-light.woff2') format('woff2'),
+       url('/fonts/gilroy/gilroy-light.woff') format('woff');
+  font-weight: 300; /* Light weight */
+  font-style: normal;
+}
+

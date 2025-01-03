@@ -245,7 +245,7 @@ function Home({ }: Props) {
                 {Services.map((service) => (
                     <div
                         key={service.p1}
-                        className="backdrop-filter: blur(70px)"
+                        className="backdrop-filter: blur(70px) "
                         style={{
                             border: "0.6px solid transparent",
                             borderImageSource: "linear-gradient(180.37deg, #BAF2FF -18.72%, rgba(6, 128, 250, 0) 113.62%)",

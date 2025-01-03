@@ -5,7 +5,6 @@ import aboutus2 from "../../assets/Reusable_Images/aboutus2.png"
 import aboutus3 from "../../assets/Reusable_Images/aboutus3.jpg"
 import aboutus4 from "../../assets/Reusable_Images/aboutus4.png"
 import aboutus5 from "../../assets/Reusable_Images/aboutus5.png"
-
 import card1 from "../../assets/Images/Group 110.svg"
 import card2 from "../../assets/Images/Group 110 (1).svg"
 import card3 from "../../assets/Images/Group 110 (2).svg"
@@ -17,7 +16,7 @@ function AboutUs() {
   const images = [aboutus1, aboutus2, aboutus3, aboutus4, aboutus5]
 
   return (
-    <div className="relative w-full min-h-screen">
+    <div className="relative w-full min-h-screen mt-20">
       {/* Background Grid */}
       <BackgroundGrid width="100%" height="100%" />
 
@@ -40,16 +39,45 @@ function AboutUs() {
         {/* Contact Us Button */}
         <button className="bg-[#2b9cff] text-white font-gilroy font-thin  py-3 px-6 rounded-full hover:bg-[#026BB0] transition duration-200">Contact Us</button>
       </div>
-
       <div className="container mx-auto p-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-5">
-          {images.map((src, index) => (
-            <div key={index} className={`relative w-[80%] aspect-[3/4] overflow-hidden rounded-lg transform ${index % 2 === 0 ? "-translate-y-4" : "translate-y-4"}`}>
-              <img src={src} alt={`Grid image ${index + 1}`} className="absolute inset-0 w-full h-full object-cover" />
-            </div>
-          ))}
-        </div>
+  {/* For Mobile View (First Two Images Horizontally Aligned) */}
+  <div className="flex items-center gap-4 overflow-hidden md:hidden">
+    <div className="relative w-[50%] aspect-[3/4] overflow-hidden rounded-lg">
+      <img
+        src={images[0]} // First Image
+        alt="Image 1"
+        className="absolute inset-0 w-full h-full object-cover"
+      />
+    </div>
+    <div className="relative w-[50%] aspect-[3/4] overflow-hidden rounded-lg">
+      <img
+        src={images[1]} // Second Image
+        alt="Image 2"
+        className="absolute inset-0 w-full h-full object-cover"
+      />
+    </div>
+  </div>
+
+  {/* For Desktop View (All Images in Grid) */}
+  <div className="hidden md:grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-5">
+    {images.map((src, index) => (
+      <div
+        key={index}
+        className={`relative w-full aspect-[3/4] overflow-hidden rounded-lg transform ${
+          index % 2 === 0 ? "-translate-y-4" : "translate-y-4"
+        }`}
+      >
+        <img
+          src={src}
+          alt={`Grid image ${index + 1}`}
+          className="absolute inset-0 w-full h-full object-cover"
+        />
       </div>
+    ))}
+  </div>
+</div>
+
+
 
       {/* guidelines and priciples section */}
 
