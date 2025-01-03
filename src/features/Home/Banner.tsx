@@ -1,0 +1,101 @@
+import banner from "../../assets/icons/Background-hero-section.png"; // Adjust the path as necessary
+import clients from "../../assets/icons/clients.svg";
+import star from "../../assets/icons/AMk1eXIzzjYQwO3lBV61vl7c819FzRa89v0MlUZRrlmkPREt0rSJxD7kd2TM3N9M1-jlqRLppXI2fo40tSpVxw 1.svg";
+import bannervideo from "../../assets/icons/343f2ae5-cc22-4bf5-98d2-59327775cd9b.mp4";
+import "./Banner.css";
+
+
+function Banner() {
+  return (
+    <>
+      <div className="relative w-full h-[730px] overflow-hidden">
+        {/* Gradient Background */}
+        <div className="absolute inset-0">
+  <video
+    className="w-[1446px] h-[700px] object-cover transform scale-110 transition-all duration-500 ease-in-out"
+    src={bannervideo}
+    autoPlay
+    loop
+    muted
+    style={{
+      opacity: "100%",
+    }}
+  ></video>
+</div>
+
+        <div
+          className="absolute inset-0 z-10"
+          style={{
+            backgroundImage: `url(${banner})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            opacity: "10%",
+          }}
+        ></div>
+        <div
+          className="absolute inset-0 z-10 "
+          style={{
+            background: "radial-gradient(circle at top, #0475C6 10%, black 50%)",
+            opacity: "70%",
+          }}
+        ></div>
+
+        {/* Content Layer */}
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center   text-white z-20">
+          {/* Tagline */}
+          <div
+            style={{
+              opacity: "90%"
+            }}
+            className="bg-[#0680FA1A] px-2 py-2 rounded-full mb-6 text-xs sm:text-sm md:text-base font-medium border animate-borderRotate"
+          >
+            <div className="flex items-center space-x-2 ">
+              <img src={star} alt="" />
+              <span>Engineering your Business for the World</span>
+            </div>
+          </div>
+
+          {/* Title */}
+          <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight mb-4">
+            Empowering Businesses with <br />
+            <span className="bg-gradient-to-r from-[#45B4FF] via-[#BAFFED] to-[#84CCFF] bg-clip-text text-transparent font-bold">
+              Next-Gen Technology
+            </span>
+          </h1>
+
+          {/* Subtitle */}
+          <p className="text-xs sm:text-sm md:text-base lg:text-lg text-white text-opacity-80 max-w-sm sm:max-w-md md:max-w-xl lg:max-w-3xl mb-6">
+            Harness the power of AI, data, and cloud to lead your industry
+          </p>
+
+          {/* Call-to-Action */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
+            <button className="bg-[#0099F8] text-white px-4 sm:px-6 py-2 rounded-full text-xs sm:text-sm md:text-base font-medium hover:bg-blue-400 transition">
+              Contact Us
+            </button>
+
+            {/* Trust Section */}
+            <div className="flex flex-col sm:flex-row items-center sm:space-x-4 text-center sm:text-left mt-4 sm:mt-0">
+              <img
+                src={clients}
+                alt="Clients"
+                // className="sm:w-10 h-8 sm:h-10"
+              />
+              <p className="text-xs sm:text-sm md:text-base lg:text-lg text-white text-opacity-60">
+                Trusted by Over +20k
+                <br />
+                Clients in India
+              </p>
+            </div>
+            {/* Video Layer */}
+          </div>
+        </div>
+      </div>
+   
+
+    </>
+  );
+}
+
+export default Banner;

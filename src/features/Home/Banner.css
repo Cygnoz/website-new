@@ -1,0 +1,30 @@
+/* Add this CSS to your style file */
+
+@keyframes borderRotate {
+  0% {
+    border-color: #ffffff;
+  }
+  25% {
+    border-color: #fcfcfc;
+  }
+  50% {
+    border-color: #0451bc;
+  }
+  40% {
+    border-color: #0451bc;
+  }
+  25% {
+    border-color: #fcfcfc;
+  }
+
+  15% {
+    border-color: #f7fafd;
+  }
+}
+
+.animate-borderRotate {
+  animation: borderRotate 1s linear infinite;
+}
+
+
+
