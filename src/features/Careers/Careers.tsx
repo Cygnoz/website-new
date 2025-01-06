@@ -276,7 +276,7 @@ function Careers() {
 
 
 
-<div className="container mx-auto  bg-white p-4">
+<div className="container mx-auto bg-white p-4">
   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
     
     {/* Large group selfie - spans 2 cols */}
@@ -300,12 +300,12 @@ function Careers() {
     </div>
 
     {/* Group photo - positioned up */}
-    <div className="rounded-2xl overflow-hidden -mt-20 lg:-mt-32">
+    <div className="rounded-2xl overflow-hidden -mt-28 lg:-mt-40">
       <img src={img5} alt="" className="w-full object-cover" />
     </div>
-    
   </div>
 </div>
+
 
 
 
