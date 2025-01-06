@@ -9,6 +9,11 @@ import bg from "../../assets/Images/swenexbg.jpg";
 import bilbizzicon from "../../assets/Icons/billbizzicon.svg";
 import nexdicon from "../../assets/Icons/6nexd.svg";
 import salonexcon from "../../assets/Icons/salonexicon.svg";
+import bilbizzvideo from "../../assets/Videos/billbizz.mp4"
+import swenexvideo from "../../assets/Videos/Sewnex_1.mp4"
+import salonexvideo from "../../assets/Videos/Elevate salon operations with comprehensive tools for seamless management and satisfaction..mp4"
+import nexdvideo from "../../assets/Videos/Precision management for car detailing studios, ensuring exceptional workflow and service..mp4"
+import './home.css'
 
 const Carousel = () => {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -19,8 +24,20 @@ const Carousel = () => {
             content: (
                 <div className="flex flex-col md:flex-row gap-10">
                     <div className="flex-1">
-                        <div className="w-full h-[360px] bg-slate-300"></div>
-                        <div className="mt-14 p-5 sm:p-8 md:p-10"
+                        <div className="w-full">
+                            <video
+                                className=" object-cover transform scale-110 transition-all duration-500 ease-in-out"
+                                src={bilbizzvideo}
+                                autoPlay
+                                loop
+                                muted
+                                style={{
+                                    opacity: "100%",
+
+                                }}
+                            ></video>
+                        </div>
+                        <div className="div-billbizz mt-10 p-5 sm:p-8 md:p-10 "
                             style={{
                                 backgroundImage: `url(${bg})`,
                                 backgroundSize: "cover",
@@ -30,19 +47,19 @@ const Carousel = () => {
                                 maxWidth: "670px", // Ensures it is responsive
                                 height: "auto",
                             }}>
-                            <button className="bg-[#004B49] rounded-lg text-white px-3 sm:px-4 py-2">
+                            <button className="button-1 bg-[#004B49] rounded-lg text-white px-3 sm:px-4 py-2">
                                 <img src={bilbizzicon} alt="" />
                             </button>
-                            <p className="text-[#3E4F65] text-[20px] sm:text-[22px] md:text-[25px] font-medium py-2 ">
+                            <p className="second-p text-[#3E4F65] text-[20px] sm:text-[22px] md:text-[25px] font-medium py-2 ">
                                 Efficient Invoicing System
                             </p>
 
-                            <div className="flex flex-col sm:flex-row justify-between sm:items-end  mt-2">
+                            <div className="div2-billbizz flex flex-col sm:flex-row justify-between sm:items-end ">
                                 <p className="text-[#6F7B8A] text-[16px] sm:text-[18px]">
-                                    Intelligent billing, automated workflows. Save time, reduce <br /> errors.
+                                    Intelligent billing, automated workflows. Save time, reduce errors.
                                 </p>
                                 <div className="text-end">
-                                    <button className="underline text-[#0380CE] mt-2 sm:mt-0">
+                                    <button className="underline w-32 text-[#0380CE] mt-2 sm:mt-0">
                                         See More
                                     </button>
                                 </div>
@@ -64,36 +81,46 @@ const Carousel = () => {
                     <div className="flex-1">
                         <img className="w-full h-auto object-cover" src={swenex} alt="" />
                     </div>
-                    <div className="flex-1">
-                        <div className="w-full h-[360px] bg-slate-300"></div>
-                        <div className="mt-10 p-5 sm:p-8 md:p-10"
+                    <div className="flex-1 ">
+                        <div className="w-full">
+                            <video
+                                className=" object-cover pe-7 transform scale-110 transition-all duration-500 ease-in-out"
+                                src={swenexvideo}
+                                autoPlay
+                                loop
+                                muted
+                                style={{
+                                    opacity: "100%",
+                                }}
+                            ></video>
+                        </div>
+                        <div
+                            className="carousal-div mt-5 p-5 sm:p-8 md:p-10 max-w-full"
                             style={{
                                 backgroundImage: `url(${bg})`,
                                 backgroundSize: "cover",
                                 backgroundRepeat: "no-repeat",
                                 backgroundPosition: "center",
-                                width: "100%",
-                                maxWidth: "670px", // Ensure it’s responsive
-                                height: "auto",
-                            }}>
-                            <button className="bg-[#004B49] rounded-lg text-white px-3 sm:px-4 py-1.5">
+                            }}
+                        >
+                            <button className="button-1 bg-[#004B49] rounded-lg text-white px-3 sm:px-4 py-1.5">
                                 Sewnex
                             </button>
-                            <p className="text-[#3E4F65] text-[20px] sm:text-[22px] md:text-[25px] font-medium py-2">
-                                Comprehensive Boutique Software with <br /> POS and Analytics
+                            <p className="text-[#3E4F65] text-lg sm:text-xl md:text-2xl leading-7 font-medium mt-4">
+                                Comprehensive Boutique Software with POS and Analytics
                             </p>
-
-                            <div className="flex flex-col sm:flex-row justify-between sm:items-center mt-2">
-                                <p className="text-[#6F7B8A] text-[16px] sm:text-[18px]">
-                                    Intelligent billing, automated workflows. Save time, reduce <br /> errors.
+                            <div className="flex flex-col sm:flex-row justify-between sm:items-center mt-4 gap-4 sm:gap-0">
+                                <p className="text-[#6F7B8A] text-base sm:text-lg">
+                                    Intelligent billing, automated workflows. Save time, reduce errors.
                                 </p>
-                                <div className="text-end">
-                                    <button className="underline text-[#0380CE] mt-2 sm:mt-0">
+                                <div className="sm:text-end">
+                                    <button className="underline w-32 text-[#0380CE]">
                                         See More
                                     </button>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             ),
@@ -103,9 +130,20 @@ const Carousel = () => {
             content: (
                 <div className="flex flex-col md:flex-row gap-10">
                     <div className="flex-1">
-                        <div className="w-full h-[360px] bg-slate-300"></div>
-
-                        <div className="mt-10 py-5 sm:py-6 md:py-8 px-5 sm:px-8 md:px-10"
+                        <div className="w-full">
+                            <video
+                                className=" object-cover transform scale-110 transition-all duration-500 ease-in-out"
+                                src={salonexvideo}
+                                autoPlay
+                                loop
+                                muted
+                                style={{
+                                    opacity: "100%",
+                                    
+                                }}
+                            ></video>
+                        </div>
+                        <div className="carousal-div mt-10 py-5 sm:py-6 md:py-8 px-5 sm:px-8 md:px-10"
                             style={{
                                 backgroundImage: `url(${bg})`,
                                 backgroundSize: "cover",
@@ -114,20 +152,21 @@ const Carousel = () => {
                                 width: "100%",
                                 maxWidth: "670px", // Ensure it’s responsive
                                 height: "auto",
+                                maxHeight: "300px"
                             }}>
-                            <button className="px-3 sm:px-4 py-2">
+                            <button className="px-3 sm:px-4">
                                 <img src={salonexcon} alt="" />
                             </button>
-                            <p className="text-[#3E4F65] text-[20px] sm:text-[22px] md:text-[25px] font-medium py-2">
+                            <p className="text-[#3E4F65] text-[20px] sm:text-[22px] leading-7 md:text-[25px] font-medium py-2">
                                 A New Standard in Beauty and Wellness Management
                             </p>
 
-                            <div className="flex flex-col sm:flex-row justify-between sm:items-center mt-2">
+                            <div className="flex flex-col sm:flex-row py-1 justify-between sm:items-center">
                                 <p className="text-[#6F7B8A] text-[16px] sm:text-[18px]">
                                     Manage appointments, payments, inventory, and customer relationships – effortlessly.
                                 </p>
                                 <div className="text-end">
-                                    <button className="underline w-32 sm:w-auto text-[#0380CE] mt-2 sm:mt-0">
+                                    <button className="underline w-32 text-[#0380CE] mt-2 sm:mt-0">
                                         See More
                                     </button>
                                 </div>
@@ -145,12 +184,22 @@ const Carousel = () => {
             content: (
                 <div className="flex flex-col md:flex-row gap-10">
                     <div className="flex-1">
-                        <img className="w-full h-auto object-cover" src={nexd} alt="" />
+                        <img className="w-full h-auto object-cover rounded-[20px]" src={nexd} alt="" />
                     </div>
                     <div className="flex-1">
-                        <div className="w-full h-[360px] bg-slate-300"></div>
-
-                        <div className="mt-10 py-5 sm:py-6 md:py-8 px-5 sm:px-8 md:px-10"
+                        <div className="w-full">
+                            <video
+                                className=" object-cover transform scale-110 transition-all duration-500 ease-in-out"
+                                src={nexdvideo}
+                                autoPlay
+                                loop
+                                muted
+                                style={{
+                                    opacity: "100%",
+                                }}
+                            ></video>
+                        </div>
+                        <div className="carousal-div mt-6 py-3 sm:py-6 md:py-8 px-5 sm:px-8 md:px-10"
                             style={{
                                 backgroundImage: `url(${bg})`,
                                 backgroundSize: "cover",
@@ -158,19 +207,20 @@ const Carousel = () => {
                                 backgroundPosition: "center",
                                 width: "100%",
                                 maxWidth: "670px", // Ensure it’s responsive
-                                height: "auto",
+                                // height: "auto",
+                                maxHeight: "240px"
                             }}>
-                            <button className="px-3 sm:px-4 py-2">
+                            <button className="px-3 sm:px-4 ">
                                 <img src={nexdicon} alt="" />
                             </button>
-                            <p className="text-[#3E4F65] text-[20px] sm:text-[22px] md:text-[25px] font-medium py-2">
+                            <p className="text-[#3E4F65] text-[20px] sm:text-[22px] leading-7 md:text-[25px] font-medium ">
                                 Automate all-in-one management platform.
                             </p>
 
-                            <p className="text-[#6F7B8A] text-[16px] sm:text-[18px]">
+                            <p className="text-[#6F7B8A] text-[16px] py-1 sm:text-[18px]">
                                 6nexd is an all-in-one software solution for the Automotive industry.
                             </p>
-                            <div className="text-end py-3">
+                            <div className="text-end ">
                                 <button className="underline text-[#0380CE]">
                                     See More
                                 </button>
@@ -194,7 +244,7 @@ const Carousel = () => {
         <div className="relative overflow-hidden">
             <div className="flex transition-transform duration-500" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
                 {slides.map((slide) => (
-                    <div key={slide.id} className="min-w-full">
+                    <div key={slide.id} className="min-w-full overflow-hidden">
                         {slide.content}
                     </div>
                 ))}

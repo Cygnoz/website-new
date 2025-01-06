@@ -114,81 +114,59 @@
   gap: 5rem;
   padding: 2rem;
   justify-content: space-between;
-  transition: .2s;
+  transition: 0.2s;
 }
-
-/* @media (min-width: 1024px) {
-    .our-process-container {
-      flex-direction: row;
-      justify-content: space-between;
-    }
-  } */
 
 /* Left section of the process */
 .solutions-left,
 .solutions-right {
   width: 500px;
   height: auto;
-  transition: .2s;
+  transition: 0.2s;
 }
-
-/* @media (min-width: 1024px) {
-    .solutions-left,
-    .solutions-right {
-        width: 440px;
-    }
-  } */
 
 /* Center image styling */
 .center-img img {
   width: 200px;
   height: 1300px;
-  transition: .2s;
+  transition: 0.2s;
 }
 
-/* @media (min-width: 1000px) {
-    .center-img img {
-      max-width: none;
-    }
-  } */
-
-/* @media (min-width: 1024px) {
-    .center-img{
-        width: 200px;
-        height: 1300px;
-      }
-  } */
 /* Each solution item */
 .solution-item-left {
   padding: 0px 0px 10px 0px;
   margin-bottom: 20%;
   width: 100%;
   height: auto;
-  transition: .2s;
+  transition: 0.2s;
 }
 .solution-item-right {
   padding: 10px 0px 10px 0px;
   margin-bottom: 20%;
   width: 100%;
   height: auto;
-  transition: .2s;
   text-align: end;
   justify-items: end;
+  justify-content: end;
+  align-items: end;
+  transition: 0.2s;
+}
+.solution-icon-right,
+.solution-item-right p{
+  text-align: end;
+  justify-items: end;
+  justify-content: end;
+  align-items: end;
 }
 
-/* @media (min-width: 1024px) {
-    .solution-item {
-      text-align: center;
-    }
-  }
-   */
 /* Solution title styling */
 .solution-title {
   color: #3e4f65;
   padding: 0.5rem 0;
   font-size: 24px;
   font-weight: 500;
-  transition: .2s;
+  transition: 0.2s;
+  line-height: 28px;
 }
 
 /* Solution description styling */
@@ -196,64 +174,55 @@
   color: #6f7b8a;
   font-size: 18px;
   padding: 5px 0px 5px 0px;
-  transition: .2s;
+  transition: 0.2s;
 }
 
-/* Solution icon adjustments */
-/* .solution-icon-right {
-    margin-left: auto;
-  } */
-
-/* .solution-item img {
-    display: block;
-    margin: 0 auto;
-  } */
 .main {
   display: flex;
   gap: 30px;
-  transition: .2s;
+  transition: 0.2s;
 }
 .left-img img {
   width: 80px;
   height: 2800px;
-  transition: .2s;
+  transition: 0.2s;
 }
 @media screen and (max-width: 960px) {
   .our-process-container {
     gap: 10px;
     padding: 1rem;
-    transition: .2s;
+    transition: 0.2s;
   }
 }
 @media screen and (max-width: 760px) {
   .our-process-container {
     gap: 5px;
     padding: 5px;
-    transition: .2s;
+    transition: 0.2s;
   }
 }
 
 @media screen and (max-width: 759px) {
   .our-process-container {
     display: inline-block;
-    transition: .2s;
+    transition: 0.2s;
   }
   .center-img {
     display: none;
-    transition: .2s;
+    transition: 0.2s;
   }
   .solutions-left,
   .solutions-right {
     width: 500px;
     height: auto;
-    transition: .2s;
+    transition: 0.2s;
   }
   .left-img img {
     height: 2500px;
-    transition: .2s;
+    transition: 0.2s;
   }
   .solution-item-right {
-    transition: .2s;
+    transition: 0.2s;
     text-align: start;
     justify-items: start;
   }
@@ -263,28 +232,30 @@
   .main {
     display: inline;
     gap: 0%;
-    transition: .2s;
+    transition: 0.2s;
   }
   .left-img img {
     display: none;
-    transition: .2s;
+    transition: 0.2s;
   }
+ 
+}
+@media screen and (max-width: 759px) {
   .solution-item-right {
-    transition: .2s;
+    transition: 0.2s;
     text-align: start;
     justify-items: start;
   }
 }
-
 @media screen and (max-width: 640px) {
   .solutions-left,
   .solutions-right {
     width: 300px;
     height: auto;
-    transition: .2s;
+    transition: 0.2s;
   }
   .solution-item-right {
-    transition: .2s;
+    transition: 0.2s;
     text-align: start;
     justify-items: start;
   }
@@ -294,14 +265,14 @@
   .solutions-right {
     width: 250px;
     height: auto;
-    transition: .2s;
+    transition: 0.2s;
   }
   .left-img img {
     height: 2800px;
-    transition: .2s;
+    transition: 0.2s;
   }
   .solution-item-right {
-    transition: .2s;
+    transition: 0.2s;
     text-align: start;
     justify-items: start;
   }
@@ -312,14 +283,14 @@
   .solutions-right {
     width: 220px;
     height: auto;
-    transition: .2s;
+    transition: 0.2s;
   }
   .left-img img {
     height: 2850px;
-    transition: .2s;
+    transition: 0.2s;
   }
   .solution-item-right {
-    transition: .2s;
+    transition: 0.2s;
     text-align: start;
     justify-items: start;
   }
@@ -329,15 +300,300 @@
   .solutions-right {
     width: 200px;
     height: auto;
-    transition: .2s;
+    transition: 0.2s;
   }
   .left-img img {
     height: 3000px;
-    transition: .2s;
+    transition: 0.2s;
   }
   .solution-item-right {
-    transition: .2s;
+    transition: 0.2s;
     text-align: start;
     justify-items: start;
   }
+}
+
+/* about us */
+.hover2 img {
+  position: absolute;
+  top: 950px;
+  bottom: 0%;
+  left: 66%;
+  transition: all 0.3s ease-in-out;
+}
+.hoverframe1 img {
+  transition: all 0.3s ease-in-out;
+}
+.rightsection { 
+  transition: all 0.3s ease-in-out;
+  width: 480px;
+}
+
+.rightImage,
+.rightImage1,
+.rightImage4, 
+.rightImage2,
+.rightImage3{
+  width: 150px; /* Default width */
+  height: 150px; /* Default height */
+  border-radius: 50px;
+  object-fit: cover;
+  transition: width 0.4s ease-in-out, height 0.4s ease-in-out; /* Smooth transition */
+}
+
+.rightsection:hover{
+  .rightImage1 {
+   width: 80px; /* Target width */
+ }
+ .rightImage4 {
+  width: 80px; /* Target width */
+}
+}
+
+.rightsection:hover {
+  .rightImage2 {
+    width: 200px; /* Target width */
+    height: 150px; /* Target height */
+  }
+  .rightImage3 {
+    width: 200px; /* Target width */
+  }
+}
+
+.rightsection:hover .hover2 img {
+    top: 1025px; /* Smooth position change */
+    top: 1010px;
+    bottom: 0%;
+    left: 61.5%;
+    transform: rotate(55deg); /* Smooth rotation */
+
+}
+
+.rightsection:hover .hoverframe1 img {
+  transform: rotate(44deg); /* Smooth rotation */
+}
+.hoverframe1{
+  margin: 5px;
+}
+@media screen and (max-width: 1300px) {
+  .rightsection:hover .hover2 img {
+    top: 1025px; /* Smooth position change */
+    top: 1010px;
+    bottom: 0%;
+    left: 60.5%;
+    transform: rotate(55deg); /* Smooth rotation */
+}
+.div-billbizz{
+  max-height: 250px;
+  margin-top: 1px;
+}
+}
+@media screen and (max-width: 1250px) {
+  .rightsection:hover .hover2 img {
+    top: 1025px; /* Smooth position change */
+    top: 1010px;
+    bottom: 0%;
+    left: 59.5%;
+    transform: rotate(55deg); /* Smooth rotation */
+}
+.hover2 img {
+  left: 64%;
+}
+.carousal-div p{
+ font-size: 19px;
+}
+}
+@media screen and (max-width: 1210px) {
+  .rightsection:hover .hover2 img {
+    top: 1025px; /* Smooth position change */
+    top: 1010px;
+    bottom: 0%;
+    left: 58.5%;
+    transform: rotate(55deg); /* Smooth rotation */
+
+}
+}
+@media screen and (max-width: 1170px) {
+  .rightsection:hover .hover2 img {
+    top: 1025px; /* Smooth position change */
+    top: 1010px;
+    bottom: 0%;
+    left: 57.5%;
+    transform: rotate(55deg); /* Smooth rotation */
+
+}
+}
+@media screen and (max-width: 1145px) {
+
+  .hover2 img {
+    left: 63%;
+  }
+}
+@media screen and (max-width: 1125px) {
+  .rightsection:hover .hover2 img {
+    top: 1025px; /* Smooth position change */
+    top: 1010px;
+    bottom: 0%;
+    left: 56.5%;
+    transform: rotate(55deg); /* Smooth rotation */
+}
+.carousal-div {
+ height: 230px;
+ }
+}
+@media screen and (max-width: 1090px) {
+  .rightsection:hover .hover2 img {
+    top: 1025px; /* Smooth position change */
+    top: 1010px;
+    bottom: 0%;
+    left: 56%;
+    transform: rotate(55deg); /* Smooth rotation */
+}
+.hover2 img {
+  left: 61%;
+}
+}
+@media screen and (max-width: 1065px) {
+  .rightsection:hover .hover2 img {
+    top: 1025px; /* Smooth position change */
+    top: 1010px;
+    bottom: 0%;
+    left: 55%;
+    transform: rotate(55deg); /* Smooth rotation */
+}
+.hover2 img {
+  left: 60.5%;
+}
+}
+@media screen and (max-width: 1025px) {
+  .rightsection:hover .hover2 img {
+    top: 1025px; /* Smooth position change */
+    top: 1005px;
+    bottom: 0%;
+    left: 54%;
+    transform: rotate(55deg); /* Smooth rotation */
+}
+.hover2 img {
+  left: 60.5%;
+}
+}
+@media screen and (max-width: 1023px) {
+  .hover2{
+    display: none;
+  }
+  .rightImage,
+  .rightImage1,
+  .rightImage2,
+  .rightImage3,
+  .rightImage4 {
+    transition: none; /* Disable transitions */
+    width: 100%;
+    height: auto; 
+  }
+  .rightsection:hover .rightImage1,
+  .rightsection:hover .rightImage4,
+  .rightsection:hover .rightImage2,
+  .rightsection:hover .rightImage3 {
+    width: 100%; /* Reset to 100% */
+  }
+  .rightsection:hover .hoverframe1 img {
+    transform: none; /* Remove rotation */
+  }
+  .rightsection:hover .hoverframe1 img {
+    transform: rotate(0deg); 
+  }
+  .rightsection{
+     width: 600px; 
+    margin: 0% 10% 0% 15%;
+  }
+  .images{
+    gap: 5rem;
+  }
+}
+@media screen and (max-width: 880px) {
+  .rightsection{
+    width: 600px; 
+   margin: 0% 10% 0% 5%;
+ }
+}
+@media screen and (max-width: 780px) {
+  .div-billbizz,
+  .carousal-div{
+    max-height: 150px;
+    padding: 1;
+  }
+  .button-1 {
+    width: 80px;
+    padding: 1;
+    font-size: 10px;
+  }
+  
+  .div-billbizz p,
+  .carousal-div p{
+    font-size: 15px;
+    padding: 1;
+  }
+  /* .div2-billbizz{
+    display: inline-block;
+  } */
+  .div2-billbizz p{
+    font-size: 10px;
+  }
+  .div2-billbizz button {
+    width: 50px;
+    font-size: 10px;
+    margin: 0px;
+
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .rightsection{
+    width: 500px; 
+   margin: 0% 10% 0% 5%;
+ }
+ .images{
+  gap: 1rem;
+}
+}
+@media screen and (max-width: 565px) {
+  .rightsection{
+    width: 400px; 
+   margin: 0% 10% 0% 4%;
+ }
+ .rightsection:hover .rightImage,
+ .rightsection:hover .rightImage1,
+ .rightsection:hover .rightImage4,
+ .rightsection:hover .rightImage2,
+ .rightsection:hover .rightImage3 {
+   width: 100%; /* Reset to 100% */
+   height: 120px;
+ }
+}
+
+@media screen and (max-width: 565px) {
+  .rightsection{
+    width: 330px; 
+   margin: 0% 10% 0% 5%;
+ }
+ .rightsection:hover .rightImage,
+ .rightsection:hover .rightImage1,
+ .rightsection:hover .rightImage4,
+ .rightsection:hover .rightImage2,
+ .rightsection:hover .rightImage3 {
+   width: 100%; /* Reset to 100% */
+   height: 100px;
+   border-radius: 30px;
+ }
+ .hoverframe1{
+  margin: 0;
+  width: 100px;
+ }
+}
+
+@media screen and (max-width: 565px) {
+  .rightsection{
+    width: 330px; 
+   margin: 0% 10% 0% 0%;
+ }
 }

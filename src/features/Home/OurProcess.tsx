@@ -74,7 +74,7 @@ function OurProcess({ }: Props) {
     return (
         <div className="main ">
             <div className="left-img">
-                <img  src={leftimg} alt="" />
+                <img src={leftimg} alt="" />
             </div>
             <div className="our-process-container">
                 <div className="solutions-left">
@@ -93,7 +93,9 @@ function OurProcess({ }: Props) {
                 <div className="solutions-right">
                     {SolutionsR.map((solution, index) => (
                         <div key={index} className="solution-item-right">
-                            <img src={solution.icon} alt="" className="solution-icon-right" />
+                            <div className="text-end">
+                                <img src={solution.icon} alt="" className="" />
+                            </div>
                             <p className="solution-title">{solution.p1}</p>
                             <p className="solution-description">{solution.p2}</p>
                             {solution.icon1 && <img src={solution.icon1} alt="" className="solution-icon-right" />}
