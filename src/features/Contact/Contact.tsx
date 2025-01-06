@@ -29,7 +29,7 @@ const ContactPage = () => {
   return (
     <div className=" pt-10">
       <main>
-        <section className="bg-white p-8 shadow rounded-lg">
+        <section className="bg-white pt-5 shadow rounded-lg">
           <div className="flex justify-center lg:justify-start items-center space-x-2 mb-4 px-8">
             <Star_wide />
             <h3 className="text-sm sm:text-lg font-medium text-blue-300 tracking-wide">
@@ -67,42 +67,42 @@ const ContactPage = () => {
               <img src={contactimg} alt="Contact" className="" />
             </div>
             <div className=" lg:w-[743px] lg:h-[506px] lg:gap-[48px]">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                <div className="h-[78px]">
                   <label className="block px-1 text-18px text-[#3E4F65]">
                     Your Name
                   </label>
                   <input
                     type="text"
-                    className="mt-1 w-full border-0 border-b border-[#CACACA] focus:border-blue-500 focus:ring-0"
+                    className="lg:m-4 m-2 w-full border-0 border-b border-[#CACACA] focus:border-blue-500 focus:ring-0 focus:outline-none"
                   />
                 </div>
-                <div>
+                <div className="h-[78px]">
                   <label className="block px-1 text-18px text-[#3E4F65]">
                     Phone Number (optional)
                   </label>
                   <input
                     type="text"
-                    className="mt-1 w-full border-0 border-b border-[#CACACA] focus:border-blue-500 focus:ring-0"
+                    className="lg:m-4 m-2 w-full border-0 border-b border-[#CACACA] focus:border-blue-500 focus:ring-0 focus:outline-none"
                   />
                 </div>
               </div>
-              <div className="py-4">
+              <div className="h-[78px]">
                 <label className="block px-1 text-18px text-[#3E4F65]">
                   Email
                 </label>
                 <input
                   type="email"
-                  className="mt-1 w-full border-0 border-b border-[#CACACA] focus:border-blue-500 focus:ring-0"
+                  className="lg:m-4 m-2 w-full border-0 border-b border-[#CACACA] focus:border-blue-500 focus:ring-0 focus:outline-none"
                 />
               </div>
-              <div>
+              <div className="h-[146px]">
                 <label className="block px-1 text-18px text-[#3E4F65]">
                   Message
                 </label>
                 <textarea
                   name="message"
-                  className="mt-1 w-full border-0 border-b border-[#CACACA] focus:border-blue-500 focus:ring-0"
+                  className="lg:m-4  w-full border-0 border-b border-[#CACACA] focus:border-blue-500 focus:ring-0 focus:outline-none"
                 ></textarea>
               </div>
               <div className="pt-8">
@@ -227,7 +227,7 @@ const ContactPage = () => {
               <div className="relative w-full">
                 <input
                   type="email"
-                  className="w-[370px] p-4 sm:p-2  bg-[#FFFFFF1A] bg-opacity-0   text-gray-800 placeholder-white lg:w-[474px] lg:h-[84px] rounded-full"
+                  className="w-[370px] p-4 sm:p-2  bg-[#FFFFFF1A] bg-opacity-0 focus:outline-none  text-gray-800 placeholder-white lg:w-[474px] lg:h-[84px] rounded-full"
                   placeholder="  Enter Your Email"
                 />
                 <button
