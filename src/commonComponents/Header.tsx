@@ -24,16 +24,14 @@ function Header() {
   return (
     <nav
       className={`py-4 px-5 sm:px-10 md:px-20 fixed top-0 w-full z-50 transition-colors duration-300 ${
-        isScrolled
-          ? "bg-gradient-to-r from-blue-900 to-black text-white"
-          : "bg-transparent text-white"
+        isScrolled ? "bg-black text-white" : "bg-transparent text-white"
       }`}
     >
       <div className="flex justify-between items-center w-full relative">
         {/* Left Section: Logo and Company Name */}
         <div className="flex items-center">
           <img src={cygnoz} alt="Cygnoz Logo" className="w-[40px] h-[40px]" />
-          <span className="text-lg font-semibold">Cygnoz</span>
+          <span className="text-2xl font-semibold">Cygnoz.com</span>
         </div>
 
         {/* Right Section: Navigation Links */}
@@ -54,7 +52,7 @@ function Header() {
         {/* Mobile Menu Toggle (Hamburger) */}
         <div className="md:hidden">
           <button
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            onClick={() => setIsMobileMenuOpen((prev) => !prev)}
             className="focus:outline-none"
           >
             <svg
@@ -62,9 +60,7 @@ function Header() {
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
-              className={`w-6 h-6 ${
-                isScrolled ? "text-black" : "text-white"
-              }`}
+              className={`w-6 h-6 ${isScrolled || isMobileMenuOpen ? "text-white" : "text-black"}`}
             >
               <path
                 strokeLinecap="round"
@@ -82,17 +78,17 @@ function Header() {
         <>
           {/* Overlay */}
           <div
-            className="fixed inset-0 bg-black bg-opacity-50 z-40"
+            className="fixed inset-0 bg-black opacity-50 z-40"
             onClick={closeMobileMenu}
           ></div>
 
           {/* Menu */}
-          <div className="md:hidden flex flex-col mt-4 space-y-2 text-center bg-black rounded-lg p-4 fixed w-full top-full left-0 z-50">
+          <div className="md:hidden flex flex-col mt-4 space-y-4 text-center bg-black rounded-lg p-4 fixed w-full top-16 left-0 z-50">
             {["Home", "Services", "Products", "About Us", "Careers", "Contact"].map((item, idx) => (
               <Link
                 key={idx}
-                to={`/${item.toLowerCase().replace(" ", "")}`}
-                className="text-xl hover:text-[#64C4FF] block pb-2 text-white"
+                to={item === "Home" ? "/" : `/${item.toLowerCase().replace(" ", "")}`}
+                className="text-xl hover:text-[#64C4FF] text-white transition-colors duration-300"
                 onClick={closeMobileMenu}
               >
                 {item}

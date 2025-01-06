@@ -2,14 +2,18 @@ import { InputAdornment, TextField } from "@mui/material";
 import cygnoz from "../assets/icons/Cygnoz-logo.svg";
 import handshake from "../assets/icons/Handshake.svg";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import socialMedia from "../assets/icons/socialMedia.svg";
+import facebook from "../assets/social/facebook.png";
+import instagram from "../assets/social/instagram.png";
+import youtube from "../assets/social/youtube.png";
+import tweet from "../assets/social/tweet.png";
 
 function Footer() {
   return (
-    <footer className="bg-[#000C14] text-white py-10 px-5 md:px-20">
+    <footer className=" bg-[#000C14] text-white py-10 px-5 md:px-20">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
         {/* Feedback Section */}
-        <div className="bg-[#003A67] p-8 rounded-lg">
+        <div className="bg-[#003A67]  rounded-lg">
+          <div className="p-8">
           <h3 className="text-lg font-semibold mb-4 text-[#64C4FF]">
             FEEDBACK
           </h3>
@@ -88,13 +92,14 @@ function Footer() {
               Send Request
             </button>
           </form>
+          </div>
           <img
             src={handshake}
             alt="Handshake"
-            className="mt-5 w-full h-auto object-contain"
+            className=" w-full h-auto object-cover"
           />
 
-          <p className="text-sm mt-5 text-gray-400">Privacy</p>
+          <p className="text-sm mt-5 text-gray-400 p-2">Privacy</p>
         </div>
 
         {/* Links Section */}
@@ -189,8 +194,11 @@ function Footer() {
                   }}
                 />
               </form>
-              <div className="flex justify-start mt-10 gap-7">
-                <img src={socialMedia} alt="" className=" rounded-full" />
+              <div className="flex justify-start mt-10 gap-3">
+                <img src={facebook} alt="" className=" rounded-full h-[50px] w-[50px] hover:bg-gray-900" />
+                <img src={instagram} alt="" className=" rounded-full h-[50px] w-[50px] hover:bg-gray-900" />
+                <img src={youtube} alt="" className=" rounded-full h-[50px] w-[50px] hover:bg-gray-900" />
+                <img src={tweet} alt="" className=" rounded-full h-[50px] w-[50px] hover:bg-gray-900" />
               </div>
             </div>
           </div>

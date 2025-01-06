@@ -10,5 +10,14 @@ export default {
       questrial: ['Questrial', 'sans-serif'],
     },    
   },
+  keyframes: {
+    spin: {
+      '0%': { transform: 'rotate(0deg)' },
+      '100%': { transform: 'rotate(360deg)' },
+    },
+  },
+  animation: {
+    spin: 'spin 2s linear infinite',
+  },
   plugins: [],
 }

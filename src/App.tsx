@@ -5,6 +5,7 @@ import AboutUs from "./features/About Us/AboutUs"
 import Home from "./features/Home/Home"
 import Servicess from "./features/Servicess/Servicess"
 import Careers from "./features/Careers/Careers"
+import ContactPage from "./features/Contact/Contact"
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Route  path="/services" element={<Servicess/>} />
       <Route  path="/aboutus" element={<AboutUs />} />
       <Route  path="/careers" element={<Careers />} />
+      <Route  path="/contact" element={<ContactPage />} />
     </Routes>
     <Footer/>
     

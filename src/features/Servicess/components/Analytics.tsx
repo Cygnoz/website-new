@@ -1,9 +1,10 @@
 import React from "react";
 import analytic from "../../../assets/Images/AIeng.png";
-import Star_wide from "../../../assets/icons/Star_wide";
+import Star_wide from "../../../assets/Icons/Star_wide";
+
 const Analytics: React.FC = () => {
   return (
-    <div className="bg-gradient-to-r from-blue-900 to-black text-white h-auto flex flex-col lg:flex-row gap-10 justify-center p-5 border-b border-b-slate-600">
+    <div className="bg-transparent text-white h-auto flex flex-col lg:flex-row gap-10 justify-center p-5 border-b border-b-slate-600">
       <div className="flex flex-col lg:flex-row gap-5 items-center lg:items-start text-center lg:text-left w-full lg:w-auto">
         <img src={analytic} alt="full stack" className="w-[150px] h-[80px]" />
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extralight mb-4 lg:mb-0">
@@ -11,7 +12,7 @@ const Analytics: React.FC = () => {
         </h2>
       </div>
       <div className="max-w-full lg:max-w-4xl flex flex-col items-center lg:items-start">
-        <h1 className="text-xl sm:text-2xl lg:text-3xl font-extralight mb-4">
+      <h1 className="hidden lg:block text-xl lg:text-3xl font-extralight mb-4">
           Analytic Engineering
         </h1>
         <p className="mb-6 text-sm sm:text-base text-[#B6B6B6] text-center lg:text-left">
