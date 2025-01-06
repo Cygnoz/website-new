@@ -195,9 +195,16 @@ function Footer() {
                 />
               </form>
               <div className="flex justify-start mt-10 gap-3">
-                <img src={facebook} alt="" className=" rounded-full h-[50px] w-[50px] hover:bg-gray-900" />
-                <img src={instagram} alt="" className=" rounded-full h-[50px] w-[50px] hover:bg-gray-900" />
-                <img src={youtube} alt="" className=" rounded-full h-[50px] w-[50px] hover:bg-gray-900" />
+             
+              <a href=" https://www.facebook.com/cygnotechlabs/">
+              <img src={facebook} alt="" className=" rounded-full h-[50px] w-[50px] hover:bg-gray-900" /></a>
+                
+
+                <a href="https://www.instagram.com/cygnoz_/">
+                <img  src={instagram} alt="" className=" rounded-full h-[50px] w-[50px] hover:bg-gray-900" /></a>
+                
+             
+                <a href="https://www.youtube.com/channel/UCqE3LivypjsuSyK4wrz7Tig">   <img src={youtube} alt="" className=" rounded-full h-[50px] w-[50px] hover:bg-gray-900" /></a>
                 <img src={tweet} alt="" className=" rounded-full h-[50px] w-[50px] hover:bg-gray-900" />
               </div>
             </div>
