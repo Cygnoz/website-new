@@ -6,6 +6,7 @@ import Home from "./features/Home/Home"
 import Servicess from "./features/Servicess/Servicess"
 import Careers from "./features/Careers/Careers"
 import ContactPage from "./features/Contact/Contact"
+import Products from "./features/Products/Products"
 
 
 function App() {
@@ -18,6 +19,8 @@ function App() {
       <Route  path="/aboutus" element={<AboutUs />} />
       <Route  path="/careers" element={<Careers />} />
       <Route  path="/contact" element={<ContactPage />} />
+      <Route  path="/products" element={<Products />} />
+
     </Routes>
     <Footer/>
     
