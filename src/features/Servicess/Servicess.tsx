@@ -13,7 +13,7 @@ const Servicess: React.FC = () => {
   return (
     <>
       <div className=" ">
-        <div className="animated-background bg-black ">
+        <div className="animated-background bg-black pt-10">
           <div className=" text-white h-auto grid grid-cols-1  border-b border-b-gray-600  pt-10">
           <div className="px-4 sm:px-6 lg:px-10 flex flex-col lg:flex-row">
   {/* Image Section */}
@@ -21,7 +21,7 @@ const Servicess: React.FC = () => {
     <img
       src={cyglogo}
       alt="Decorative"
-      className="w-[150px] h-auto lg:w-[400px] lg:h-[96] object-contain"
+      className="w-[150px] h-auto lg:w-[400px] lg:h-[96] object-contain -mb-8"
     />
   </div>
 

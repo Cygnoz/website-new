@@ -1,35 +1,21 @@
 .animated-background {
-    background: conic-gradient(
-      from 0deg at 100% 0%, 
-      #06303a, 
-      #FFD361, 
-      #0f3d5a, 
-      #000000, 
-      #153c5b, 
-      #051d22
-    );
-    background-size: 600% 600%; /* Larger background for smoother gradients */
-    animation: animate-background 5s infinite linear; /* Linear for consistent motion */
+  background: linear-gradient(90deg, #00a1f1, #064034, #000000, #031c2a);
 
+  background-size: 200% 200%;
+
+  animation: gradient-animation 5s ease-in-out infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
   }
-  
 
-
-  @keyframes animate-background {
-    0% {
-      background-position: 0% 80%;
-    }
-    25% {
-      background-position: 0% 0%;
-    }
-    50% {
-      background-position: 0% 0%;
-    }
-    75% {
-      background-position: 0% 0%;
-    }
-    100% {
-      background-position: 0% 100%;
-    }
+  50% {
+    background-position: 100% 50%;
   }
-  
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
