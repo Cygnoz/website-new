@@ -27,7 +27,7 @@ const ContactPage = () => {
     },
   ];
   return (
-    <div className="bg-gray-100 pt-10">
+    <div className=" pt-10">
       <main>
         <section className="bg-white p-8 shadow rounded-lg">
           <div className="flex justify-center lg:justify-start items-center space-x-2 mb-4 px-8">
@@ -41,22 +41,25 @@ const ContactPage = () => {
               Get in touch with us. We're <br /> here to assist you.
             </h2>
             <div className="flex lg:flex-col gap-2 items-start md:items-end">
-              <img
-                src={fb}
-                alt=""
-                className="rounded-full h-[50px] w-[50px] hover:bg-blue-400 mb-2"
-              />
-              <img
-                src={insta}
-                alt=""
-                className="rounded-full h-[50px] w-[50px] hover:bg-pink-600 mb-2"
-              />
-              <img
-                src={tweet}
-                alt=""
-                className="rounded-full h-[50px] w-[50px] hover:bg-sky-400"
-              />
-            </div>
+            <a href=" https://www.facebook.com/cygnotechlabs/">
+  <img
+    src={fb}
+    alt=""
+    className="rounded-full h-[50px] w-[50px] hover:bg-gradient-to-r from-[#1877f2] to-[#3b5998] mb-2" // Facebook gradient
+  /></a>
+   <a href="https://www.instagram.com/cygnoz_/">
+  <img
+    src={insta}
+    alt=""
+    className="rounded-full h-[50px] w-[50px] hover:bg-gradient-to-r from-[#f58529] via-[#dd2a7b] via-[#8134af] to-[#515bd4] mb-2" // Instagram gradient
+  /></a>
+  <img
+    src={tweet}
+    alt=""
+    className="rounded-full h-[50px] w-[50px] hover:bg-gradient-to-r from-[#1da1f2] to-[#00aced] mb-2" // Twitter gradient
+  />
+</div>
+
           </div>
 
           <div className="p-8 flex flex-col lg:flex-row gap-8">
