@@ -12,7 +12,6 @@ import fullstack from "../../assets/Icons/fullstack.svg";
 import process from "../../assets/Images/OurProcessbg.svg";
 import OurProcess from "./OurProcess";
 import TestimonialsCarousel from "./Testimonials";
-import servicescbg from "../../assets/Images/servicescbg.png";
 import hoverframe1 from "../../assets/Images/hoverframe1.png";
 import hover2 from "../../assets/Images/hower2.png";
 import image1 from "../../assets/Images/Thumbnaillll.svg";
@@ -22,11 +21,11 @@ import image4 from "../../assets/Images/Thumbnail3.svg";
 import image5 from "../../assets/Images/Thumbnail4.svg";
 import image6 from "../../assets/Images/Thumbnail5.svg";
 import image7 from "../../assets/Images/Thumbnail6.svg";
+import TESTIMONIALSImg from "../../assets/Images/image3.png";
 
 
 import './home.css'
 import Banner from "./Banner";
-
 
 type Props = {};
 
@@ -74,6 +73,7 @@ function Home({ }: Props) {
                             height: "auto",
                         }}
                     >
+
                         <div className="px-5 sm:px-10 md:px-20 py-16 flex flex-col lg:flex-row">
                             {/* Left Section */}
                             <div className="w-full lg:w-[60%] mb-10 lg:mb-0">
@@ -117,8 +117,8 @@ function Home({ }: Props) {
 
                             {/* Right Section (Images) */}
                             <div className="rightsection w-full lg:w-[40%]  justify-between">
-                                <div className="images flex gap-4 py-2   justify-end"> 
-                                                    
+                                <div className="images flex gap-4 py-2   justify-end">
+
                                     <div className="">
                                         <img className="rightImage1" src={image1} alt="" />
                                     </div>
@@ -181,7 +181,6 @@ function Home({ }: Props) {
                     </div>
                 </section>
 
-
                 {/* Services */}
                 <section>
                     <div className="bg-[#011321] relative">
@@ -219,40 +218,16 @@ function Home({ }: Props) {
                                         We help you to build high-quality digital solutions and products as well as deliver a wide range of related professional services. We are providing world-class service to our clients.
                                     </p>
                                 </div>
-                                <div
-                                    style={{
-                                        backdropFilter: "blur(70px)", // Apply the blur effect
-                                        WebkitBackdropFilter: "blur(70px)", // Ensure compatibility with Safari
-                                        border: "0.1px solid transparent",
-                                        borderImageSource: "linear-gradient(180.37deg, #BAF2FF -18.72%, rgba(6, 128, 250, 0) 113.62%)",
-                                        borderImageSlice: 1, // Required for border-image to display correctly
-                                        background: "linear-gradient(180deg, #03192B 0%, rgba(3, 25, 43, 0.1) 100%)",
-                                        borderRadius: "10px", // Apply rounded corners
-                                        overflow: "hidden", // Ensures the content respects the radius
-                                    }}
-                                >
-                                    <div
-                                        style={{
-                                            backgroundImage: `url(${servicescbg})`,
-                                            backgroundRepeat: "no-repeat",
-                                            backgroundPosition: "right",
-                                            WebkitBackdropFilter: "blur(70px)", // Ensure compatibility with Safari
-                                            backdropFilter: "blur(70px)", // Apply the blur effect here as well
-                                            padding: "2rem",
-                                            borderRadius: "10px", // Ensure inner content respects the border radius
-                                        }}
-                                    >
-                                        <img src={fullstack} alt="" />
-                                        <p className="text-[#E7E7E7] text-[24px] sm:text-[28px] py-2">
-                                            Full Stack Engineering
-                                        </p>
-                                        <p className="text-[#B6B6B6] text-[16px] sm:text-[18px] leading-5 tracking-tight"
-                                  
-                                      >
-                                            Our custom web development covers front-end, back-end, and enterprise solutions—ready for any challenge.
-                                        </p>
-                                    </div>
+                                <div className="service-card">
+                                    <img className="size-14" src={fullstack} alt="" />
+                                    <p className="title text-[#E7E7E7] text-[24px] sm:text-[28px] py-2">
+                                        Full Stack Engineering
+                                    </p>
+                                    <p className="description text-[#B6B6B6] text-[16px] sm:text-[18px] leading-5 tracking-tight">
+                                        Our custom web development covers front-end, back-end, and enterprise solutions—ready for any challenge.
+                                    </p>
                                 </div>
+
 
                             </div>
 
@@ -260,34 +235,15 @@ function Home({ }: Props) {
                             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 my-5">
                                 {Services.map((service) => (
                                     <div
-                                        key={service.p1}
-                                        className="backdrop-filter: blur(70px)"
-                                        style={{
-                                            border: "0.6px solid transparent",
-                                            borderImageSource: "linear-gradient(180.37deg, #BAF2FF -18.72%, rgba(6, 128, 250, 0) 113.62%)",
-                                            borderImageSlice: 1, // Required for border-image to display correctly
-                                            background: "linear-gradient(180deg, #03192B 0%, rgba(3, 25, 43, 0.1) 100%)",
-                                            borderRadius: "10px", // Ensures rounded corners
-                                            overflow: "hidden", // Ensures border respects the radius
-                                        }}
-                                    >
-                                        <div
-                                            className="p-10 backdrop-filter: blur(70px)"
-                                            style={{
-                                                backgroundImage: `url(${servicescbg})`,
-                                                backgroundRepeat: "no-repeat",
-                                                backgroundPosition: "right",
-                                                WebkitBackdropFilter: "blur(70px)", // Ensures compatibility with Safari
-                                            }}
-                                        >
-                                            <img src={service.icon} alt={service.p1} />
+                                        className="service-card"                                       
+                                    >               
+                                            <img className="size-14" src={service.icon} alt={service.p1} />
                                             <p className="text-[#E7E7E7] text-[20px] sm:text-[24px] py-2">
                                                 {service.p1}
                                             </p>
                                             <p className="text-[#B6B6B6] text-[16px] sm:text-[18px]  leading-5 tracking-tight">
                                                 {service.p2}
                                             </p>
-                                        </div>
                                     </div>
                                 ))}
                             </div>
@@ -335,8 +291,13 @@ function Home({ }: Props) {
                     <div
                         className="w-full min-h-[800px] bg-opacity-90"
                         style={{
-                            background: "rgba(1, 19, 33, 0.9)",
-                            backdropFilter: "blur(250px)",
+                            backgroundImage: `url(${TESTIMONIALSImg
+                            })`,
+                            backgroundSize: "cover",
+                            backgroundRepeat: "no-repeat",
+                            backgroundPosition: "center",
+                            width: "100%",
+                            height: "100%",
                         }}
                     >
                         <div className="px-5 md:px-10 lg:px-20 py-10 md:py-16">
