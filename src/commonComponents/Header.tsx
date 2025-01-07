@@ -7,6 +7,7 @@ function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
 
   const closeMobileMenu = () => setIsMobileMenuOpen(false);
+  const toggleMobileMenu = () => setIsMobileMenuOpen((prev) => !prev);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -31,15 +32,26 @@ function Header() {
         {/* Left Section: Logo and Company Name */}
         <div className="flex items-center">
           <img src={cygnoz} alt="Cygnoz Logo" className="w-[40px] h-[40px]" />
-          <span className="text-2xl font-semibold">Cygnoz.com</span>
+          <span className="text-2xl font-semibold">Cygnoz</span>
         </div>
 
         {/* Right Section: Navigation Links */}
         <div className="hidden md:flex space-x-10">
-          {["Home", "Services", "Products", "About Us", "Careers", "Contact"].map((item, idx) => (
+          {[
+            "Home",
+            "Services",
+            "Products",
+            "About Us",
+            "Careers",
+            "Contact",
+          ].map((item, idx) => (
             <Link
               key={idx}
-              to={item === "Home" ? "/" : `/${item.toLowerCase().replace(" ", "")}`}
+              to={
+                item === "Home"
+                  ? "/"
+                  : `/${item.toLowerCase().replace(" ", "")}`
+              }
               className={`text-xl hover:text-[#64C4FF] transition-colors duration-300 ${
                 isScrolled ? "text-white" : "text-gray-300"
               }`}
@@ -49,26 +61,40 @@ function Header() {
           ))}
         </div>
 
-        {/* Mobile Menu Toggle (Hamburger) */}
+        {/* Mobile Menu Toggle (Hamburger or Close Button) */}
         <div className="md:hidden">
-          <button
-            onClick={() => setIsMobileMenuOpen((prev) => !prev)}
-            className="focus:outline-none"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              className={`w-6 h-6 ${isScrolled || isMobileMenuOpen ? "text-white" : "text-black"}`}
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
+          <button onClick={toggleMobileMenu} className="focus:outline-none">
+            {isMobileMenuOpen ? (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                className="w-6 h-6 text-white "
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            ) : (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                className="w-6 h-6 text-white"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            )}
           </button>
         </div>
       </div>
@@ -76,23 +102,35 @@ function Header() {
       {/* Mobile Navigation Menu */}
       {isMobileMenuOpen && (
         <>
-          {/* Overlay */}
+          {/* Animated Sidebar (From Left) */}
           <div
-            className="fixed inset-0 bg-black opacity-50 z-40"
-            onClick={closeMobileMenu}
-          ></div>
-
-          {/* Menu */}
-          <div className="md:hidden flex flex-col mt-4 space-y-4 text-center bg-black rounded-lg p-4 fixed w-full top-16 left-0 z-50">
-            {["Home", "Services", "Products", "About Us", "Careers", "Contact"].map((item, idx) => (
-              <Link
-                key={idx}
-                to={item === "Home" ? "/" : `/${item.toLowerCase().replace(" ", "")}`}
-                className="text-xl hover:text-[#64C4FF] text-white transition-colors duration-300"
-                onClick={closeMobileMenu}
-              >
-                {item}
-              </Link>
+            className={`md:hidden flex flex-col space-y-6 text-start bg-black min-h-screen rounded-lg p-8 fixed w-full left-0 z-50 transform transition-transform duration-1000 ease-in-out ${
+              isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
+            }`}
+          >
+            {[
+              "Home",
+              "Services",
+              "Products",
+              "About Us",
+              "Careers",
+              "Contact",
+            ].map((item, idx) => (
+              <div key={idx}>
+                <Link
+                  to={
+                    item === "Home"
+                      ? "/"
+                      : `/${item.toLowerCase().replace(" ", "")}`
+                  }
+                  className="text-xl hover:text-[#64C4FF] text-white transition-colors duration-300 font-extralight"
+                  onClick={closeMobileMenu}
+                >
+                  {item}
+                </Link>
+                <hr className="border-t-2 border-gray-600 my-2" />{" "}
+                {/* Add horizontal line */}
+              </div>
             ))}
           </div>
         </>

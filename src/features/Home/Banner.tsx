@@ -7,11 +7,11 @@ import "./Banner.css";
 function Banner() {
   return (
     <>
-      <div className="relative w-full h-[730px] overflow-hidden">
+      <div className="relative w-full lg:h-[730px]  h-[830px] overflow-hidden">
         {/* Gradient Background */}
-        <div className="absolute inset-0 pt-9">
+        <div className="absolute  pt-9">
           <video
-            className="w-[1446px] h-[700px] object-cover transform scale-110 transition-all duration-500 ease-in-out"
+            className="w-[1446px] lg:h-[700px] h-[830px] object-cover transform scale-110 transition-all duration-500 ease-in-out"
             src={bannervideo}
             autoPlay
             loop

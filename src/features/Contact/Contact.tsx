@@ -1,7 +1,7 @@
 import indiagate from "../../assets/icons/india-gate_7667695 1.svg";
 import contactbg from "../../assets/Images/contactinfobg.png";
 import burj from "../../assets/icons/noun-burj-khalifa-107653 1.svg";
-import doha from "../../assets/icons/noun-burj-khalifa-107653 1 (1).svg";
+// import doha from "../../assets/icons/noun-burj-khalifa-107653 1 (1).svg";
 import loc from "../../assets/icons/material-symbols--location-on-outline-rounded 1.svg";
 import contactimg from "../../assets/Images/contactimg.svg";
 import arrow from "../../assets/icons/rightArrow.png";
@@ -41,25 +41,26 @@ const ContactPage = () => {
               Get in touch with us. We're <br /> here to assist you.
             </h2>
             <div className="flex lg:flex-col gap-2 items-start md:items-end">
-            <a href=" https://www.facebook.com/cygnotechlabs/">
-  <img
-    src={fb}
-    alt=""
-    className="rounded-full h-[50px] w-[50px] hover:bg-gradient-to-r from-[#1877f2] to-[#3b5998] mb-2" // Facebook gradient
-  /></a>
-   <a href="https://www.instagram.com/cygnoz_/">
-  <img
-    src={insta}
-    alt=""
-    className="rounded-full h-[50px] w-[50px] hover:bg-gradient-to-r from-[#f58529] via-[#dd2a7b] via-[#8134af] to-[#515bd4] mb-2" // Instagram gradient
-  /></a>
-  <img
-    src={tweet}
-    alt=""
-    className="rounded-full h-[50px] w-[50px] hover:bg-gradient-to-r from-[#1da1f2] to-[#00aced] mb-2" // Twitter gradient
-  />
-</div>
-
+              <a href=" https://www.facebook.com/cygnotechlabs/">
+                <img
+                  src={fb}
+                  alt=""
+                  className="rounded-full h-[50px] w-[50px] hover:bg-gradient-to-r from-[#1877f2] to-[#3b5998] mb-2" // Facebook gradient
+                />
+              </a>
+              <a href="https://www.instagram.com/cygnoz_/">
+                <img
+                  src={insta}
+                  alt=""
+                  className="rounded-full h-[50px] w-[50px] hover:bg-gradient-to-r from-[#f58529] via-[#dd2a7b] via-[#8134af] to-[#515bd4] mb-2" // Instagram gradient
+                />
+              </a>
+              <img
+                src={tweet}
+                alt=""
+                className="rounded-full h-[50px] w-[50px] hover:bg-gradient-to-r from-[#1da1f2] to-[#00aced] mb-2" // Twitter gradient
+              />
+            </div>
           </div>
 
           <div className="p-8 flex flex-col lg:flex-row gap-8">
@@ -181,7 +182,7 @@ const ContactPage = () => {
             </div>
           </div>
 
-          <div className="max-w-sm bg-[#E2E4FF] shadow h-[459px] w-[90%] sm:w-[390px] mb-8">
+          {/* <div className="max-w-sm bg-[#E2E4FF] shadow h-[459px] w-[90%] sm:w-[390px] mb-8">
             <div className="flex justify-center p-4 h-[156px]">
               <img
                 className="rounded-t-lg object-cover"
@@ -208,7 +209,7 @@ const ContactPage = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
         </section>
 
         <section className="flex justify-center items-center bg-[#0099F8] text-white py-8 sm:py-12 lg:h-[396px]">

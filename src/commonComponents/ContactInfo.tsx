@@ -21,7 +21,7 @@ const ContactSection: React.FC<ContactSectionProps> = ({
 }) => {
   return (
     <section
-      className="flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-[8rem] h-[294px] "
+      className="flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-[8rem] h-[294px]"
       style={{
         backgroundImage: `url(${background})`,
         backgroundSize: "cover",
@@ -40,29 +40,43 @@ const ContactSection: React.FC<ContactSectionProps> = ({
 
       {/* Right Section */}
       <div className="text-center lg:text-left">
-        <h2 className="text-xl lg:text-2xl font-bold text-[#3E4F65] mb-4">
+        {/* Contact Info Heading */}
+        <h2 className="text-xl flex justify-center lg:justify-start lg:text-2xl font-bold text-[#3E4F65] mb-4">
           Contact Info
         </h2>
-        <div className="flex flex-col  md:flex-row justify-between gap-6">
-          <div>
+
+        {/* Contact Info and Assistance Hours Container */}
+        <div className="flex flex-col lg:flex-row justify-between gap-6 items-center lg:items-start ">
+          {/* Contact Info Section */}
+          <div className="flex flex-col gap-4">
             {contactInfo.map((info, index) => (
-              <div className="flex items-center lg:mb-4" key={index}>
-                <div className="flex items-center space-x-3">
-                  <span className="text-xl">
-                    <img
-                      src={info.icon}
-                      alt=""
-                      className={`w-[20px] h-[${info.iconHeight || 20}px]`}
-                    />
-                  </span>
-                  <span className="text-gray-700">{info.text}</span>
-                </div>
+              <div className="flex items-center space-x-3" key={index}>
+                <span className="text-xl">
+                  <img
+                    src={info.icon}
+                    alt=""
+                    className={`w-[20px] h-[${info.iconHeight || 20}px]`}
+                  />
+                </span>
+                <a
+                  className="text-gray-700 font-extralight cursor-pointer"
+                  href={
+                    info.text.includes("@")
+                      ? `mailto:${info.text}`
+                      : `tel:${info.text}`
+                  }
+                >
+                  {info.text}
+                </a>
               </div>
             ))}
           </div>
-          <div>
-            <p className="text-gray-700">
-              Assistance hours: <br /> Monday – Friday 6 am to 8 pm EST
+
+          {/* Assistance Hours Section */}
+          <div className="lg:mt-0 pb-3 text-center lg:text-left">
+            <p className="text-gray-900 font-extralight">
+              Assistance hours: <br />
+              Monday – Friday 6 am to 8 pm EST
             </p>
           </div>
         </div>
