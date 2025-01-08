@@ -241,10 +241,10 @@ function Home({}: Props) {
                 </div>
                 <div className="service-card">
                   <img className="size-14" src={fullstack} alt="" />
-                  <p className="title text-[#E7E7E7] text-[24px] sm:text-[28px] py-2">
+                  <p className="title text-[#E7E7E7] text-[20px] sm:text-[24px] py-2 font-light">
                     Full Stack Engineering
                   </p>
-                  <p className="description text-[#B6B6B6] text-[16px] sm:text-[18px] leading-5 tracking-tight">
+                  <p className="description text-gray-400 text-[16px] sm:text-[18px] leading-5 tracking-tight">
                     Our custom web development covers front-end, back-end, and
                     enterprise solutions—ready for any challenge.
                   </p>
@@ -260,10 +260,10 @@ function Home({}: Props) {
                       src={service.icon}
                       alt={service.p1}
                     />
-                    <p className="text-[#E7E7E7] text-[20px] sm:text-[24px] py-2">
+                    <p className="text-[#E7E7E7] text-[20px] font-light sm:text-[24px] py-2">
                       {service.p1}
                     </p>
-                    <p className="text-[#B6B6B6] text-[16px] sm:text-[18px]  leading-5 tracking-tight">
+                    <p className="text-gray-400 text-[16px] sm:text-[18px]  leading-5 tracking-tight">
                       {service.p2}
                     </p>
                   </div>
