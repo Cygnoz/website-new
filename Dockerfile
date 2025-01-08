@@ -32,6 +32,7 @@ COPY nginx.conf /etc/nginx/conf.d/default.conf
 EXPOSE 4173
  
 #test KT
+
 # Start the nginx server
 CMD ["nginx", "-g", "daemon off;"]
  
