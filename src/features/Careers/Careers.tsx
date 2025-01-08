@@ -281,27 +281,27 @@ function Careers() {
     
     {/* Large group selfie - spans 2 cols */}
     <div className="col-span-1 sm:col-span-2 rounded-2xl overflow-hidden">
-      <img src={img1} alt="" className="w-full h-full object-cover" />
+      <img src={img1} loading="lazy" alt="" className="w-full h-full object-cover" />
     </div>
 
     {/* Blue box image - reduced height */}
     <div className="rounded-2xl overflow-hidden h-48 lg:h-64">
-      <img src={img2} alt="" className="w-full h-64 object-cover" />
+      <img src={img2} loading="lazy" alt="" className="w-full h-64 object-cover" />
     </div>
 
     {/* Logo */}
     <div className="rounded-2xl overflow-hidden">
-      <img src={img4} alt="" className="w-full object-cover" />
+      <img src={img4} loading="lazy" alt="" className="w-full object-cover" />
     </div>
 
     {/* Frame photo */}
     <div className="rounded-2xl overflow-hidden">
-      <img src={img3} alt="" className="w-full object-cover" />
+      <img src={img3} loading="lazy" alt="" className="w-full object-cover" />
     </div>
 
     {/* Group photo - positioned up */}
     <div className="rounded-2xl overflow-hidden  lg:-mt-40">
-      <img src={img5} alt="" className="w-full object-cover -mb-10" />
+      <img src={img5} loading="lazy" alt="" className="w-full object-cover -mb-10" />
     </div>
   </div>
 </div>

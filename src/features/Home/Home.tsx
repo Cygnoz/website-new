@@ -140,36 +140,36 @@ function Home({}: Props) {
               <div className="rightsection w-full lg:w-[40%]  justify-between">
                 <div className="images flex gap-4 py-2   justify-end">
                   <div className="">
-                    <img className="rightImage1" src={image1} alt="" />
+                    <img className="rightImage1" loading="lazy" src={image1} alt="" />
                   </div>
                   <div>
-                    <img className="rightImage2" src={image2} alt="" />
+                    <img className="rightImage2" loading="lazy" src={image2} alt="" />
                   </div>
                 </div>
 
                 <div className="images flex gap-4 py-2">
                   <div className="hoverframe1">
-                    <img src={hoverframe1} alt="" />
+                    <img src={hoverframe1} loading="lazy" alt="" />
                   </div>
                   <div className="hover2">
-                    <img src={hover2} alt="" />
+                    <img src={hover2} loading="lazy" alt="" />
                   </div>
                   <div>
-                    <img className="rightImage" src={image3} alt="" />
+                    <img className="rightImage" loading="lazy" src={image3} alt="" />
                   </div>
                   <div>
-                    <img className="rightImage" src={image4} alt="" />
+                    <img className="rightImage" loading="lazy" src={image4} alt="" />
                   </div>
                 </div>
                 <div className="images flex gap-4 py-2">
                   <div>
-                    <img className="rightImage" src={image5} alt="" />
+                    <img className="rightImage" loading="lazy" src={image5} alt="" />
                   </div>
                   <div>
-                    <img className="rightImage3" src={image6} alt="" />
+                    <img className="rightImage3" loading="lazy" src={image6} alt="" />
                   </div>
                   <div>
-                    <img className="rightImage4" src={image7} alt="" />
+                    <img className="rightImage4" loading="lazy" src={image7} alt="" />
                   </div>
                 </div>
               </div>
