@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import cygnoz from "../assets/icons/Cygnoz-logo.svg";
 
 function Header() {
@@ -45,9 +44,9 @@ function Header() {
             "Careers",
             "Contact",
           ].map((item, idx) => (
-            <Link
+            <a
               key={idx}
-              to={
+              href={
                 item === "Home"
                   ? "/"
                   : `/${item.toLowerCase().replace(" ", "")}`
@@ -57,7 +56,7 @@ function Header() {
               }`}
             >
               {item}
-            </Link>
+            </a>
           ))}
         </div>
 
@@ -117,8 +116,8 @@ function Header() {
               "Contact",
             ].map((item, idx) => (
               <div key={idx}>
-                <Link
-                  to={
+                <a
+                  href={
                     item === "Home"
                       ? "/"
                       : `/${item.toLowerCase().replace(" ", "")}`
@@ -127,9 +126,8 @@ function Header() {
                   onClick={closeMobileMenu}
                 >
                   {item}
-                </Link>
-                <hr className="border-t-2 border-gray-600 my-2" />{" "}
-                {/* Add horizontal line */}
+                </a>
+                <hr className="border-t-2 border-gray-600 my-2" />
               </div>
             ))}
           </div>
