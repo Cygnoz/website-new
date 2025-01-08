@@ -1,0 +1,1 @@
+.animated-background{background:conic-gradient(from 0deg at 100% 0%,#06303a,#ffd361,#0f3d5a,#000,#153c5b,#051d22);background-size:600% 600%;animation:animate-background 5s infinite linear}@keyframes animate-background{0%{background-position:0% 80%}25%{background-position:0% 0%}50%{background-position:0% 0%}75%{background-position:0% 0%}to{background-position:0% 100%}}

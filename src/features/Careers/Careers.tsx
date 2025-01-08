@@ -286,7 +286,7 @@ function Careers() {
 
     {/* Blue box image - reduced height */}
     <div className="rounded-2xl overflow-hidden h-48 lg:h-64">
-      <img src={img2} alt="" className="w-full h-full object-cover" />
+      <img src={img2} alt="" className="w-full h-64 object-cover" />
     </div>
 
     {/* Logo */}
@@ -300,8 +300,8 @@ function Careers() {
     </div>
 
     {/* Group photo - positioned up */}
-    <div className="rounded-2xl overflow-hidden -mt-28 lg:-mt-40">
-      <img src={img5} alt="" className="w-full object-cover" />
+    <div className="rounded-2xl overflow-hidden  lg:-mt-40">
+      <img src={img5} alt="" className="w-full object-cover -mb-10" />
     </div>
   </div>
 </div>
