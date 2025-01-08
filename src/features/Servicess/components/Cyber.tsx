@@ -1,12 +1,12 @@
 import React from "react";
-import cyber from "../../../assets/Images/cyber.png";
+import cyber from "../../../assets/servisess/cber.gif";
 import Star_wide from "../../../assets/Icons/Star_wide";
 const Cyber: React.FC = () => {
   return (
     <div className="bg-transparent text-white h-auto flex flex-col lg:flex-row gap-10 justify-center p-5 border-b border-b-slate-600">
       <div className="flex flex-col lg:flex-row gap-5 items-center lg:items-start text-center lg:text-left w-full lg:w-auto">
-        <img src={cyber} alt="full stack" className="w-[150px] h-[80px]" />
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extralight mb-4 lg:mb-0">
+      <img src={cyber} alt="full stack" className="w-[154px] h-[154px] object-cover -mt-7" />
+      <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extralight mb-4 lg:mb-0">
           Cyber <br className="hidden lg:block" /> Security
         </h2>
       </div>
