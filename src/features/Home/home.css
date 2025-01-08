@@ -1,3 +1,66 @@
+@keyframes appear{
+  from{
+    opacity: 0;
+    scale: 0.5;
+  }
+  to{
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+
+/* services */
+.service-card {
+  padding: 30px 20px 30px 20px;
+  background-image: url('../../assets/Images/image1.png'); /* Replace with actual path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  max-height: 230px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: background-image 0.8s ease-in-out; /* Smooth transition */
+}
+.service-card:hover {
+  background-image: url('../../assets/Images/image2.png'); /* Hover image */
+}
+.service-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.service-card .title {
+  color: #E7E7E7;
+  font-size: 24px;
+  @media (min-width: 640px) { /* Equivalent to sm breakpoint in Tailwind */
+      font-size: 28px;
+  }
+  padding: 10px 0;
+}
+
+.service-card .description {
+  color: #B6B6B6;
+  font-size: 16px;
+  @media (min-width: 640px) {
+      font-size: 18px;
+  }
+  line-height: 1.25; /* Adjusted for 5px spacing */
+  letter-spacing: -0.5px; /* Tight tracking */
+}
+
+
+.solution-item-left,
+.solution-item-right{
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+
+}
+
 /* carousel styling */
 .carousel-container {
   width: 100%;

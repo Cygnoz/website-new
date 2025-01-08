@@ -17,8 +17,10 @@ import salonexIcone from "../../assets/Icons/salonexIcono.jpg"
 import framenexd from "../../assets/Images/nexdframeo.jpg";
 import nexdImg from "../../assets/Images/nexdImg.svg";
 import nexdIcone from "../../assets/Icons/6nexd.svg"
-import contactInfo from "../../assets/Images/ContactInfoImg.svg"
-type Props = {}
+import phoneIcon from "../../assets/icons/calll.png";
+import mailIcon from "../../assets/icons/emailss.png";
+import ContactSection from "../../commonComponents/ContactInfo"
+import contactbg from "../../assets/Images/contactinfobg.png";type Props = {}
 
 function Products({ }: Props) {
     const projects = {
@@ -51,6 +53,17 @@ function Products({ }: Props) {
             point5: "E-Commerce Integration",
         },
     }
+    const contactInfo = [
+        {
+            icon: phoneIcon,
+            text: "+91 9544431166",
+        },
+        {
+            icon: mailIcon,
+            text: "notify@cygnonex.com",
+            iconHeight: 16,
+        },
+    ];
 
 
     return (
@@ -284,10 +297,10 @@ function Products({ }: Props) {
                                 <div className="w-full lg:w-[60%]">
                                     <img src={nexdIcone} className="py-5" alt="" />
                                     <p className="text-[#3E4F65] text-[32px] md:text-[42px] leading-tight">
-                                    Automate all-in-one <br /> management platform
+                                        Automate all-in-one <br /> management platform
                                     </p>
                                     <p className="text-[#6F7B8A] py-5">
-                                    Are you passionate about technology and looking for a challenging and rewarding career? Cygnoz offers a dynamic and collaborative work environment where you can grow and learn alongside talented professionals
+                                        Are you passionate about technology and looking for a challenging and rewarding career? Cygnoz offers a dynamic and collaborative work environment where you can grow and learn alongside talented professionals
                                     </p>
                                 </div>
                                 {/* Right Content */}
@@ -321,7 +334,7 @@ function Products({ }: Props) {
                                 </div>
                                 {/* Image Section */}
                                 <div className="w-full lg:w-[50%] flex justify-center">
-                                    <img src={nexdImg   } alt="" />
+                                    <img src={nexdImg} alt="" />
                                 </div>
                             </div>
                         </div>
@@ -330,8 +343,13 @@ function Products({ }: Props) {
 
 
                 <section>
-                    <img src={contactInfo} alt="" />
-                </section>
+                    <ContactSection
+                        background={contactbg}
+                        title="We are always"
+                        subtitle="happy to assist you."
+                        contactInfo={contactInfo}
+                    />              
+                      </section>
             </div>
         </div>
     )
