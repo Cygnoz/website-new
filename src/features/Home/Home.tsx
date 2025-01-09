@@ -28,7 +28,7 @@ import Banner from "./Banner";
 
 type Props = {};
 
-function Home({}: Props) {
+function Home({ }: Props) {
   const Services = [
     {
       icon: cloud,
@@ -81,7 +81,7 @@ function Home({}: Props) {
                   <span className="text-[#6FB7FF] text-[14px] font-[12px] py-2">
                     ABOUT US
                   </span>
-                </p>
+                </p>             
                 <h1 className="text-[#3E4F65] text-[32px] sm:text-[40px] md:text-[50px] font-400 py-2.5">
                   Why Companies Choose Cygnoz
                 </h1>

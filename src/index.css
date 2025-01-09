@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,7 +7,6 @@
 html {
   scroll-behavior: smooth;
 }
-
 
 /* Define font faces for Gilroy */
 @font-face {
@@ -33,3 +34,19 @@ html {
   font-style: normal;
 }
 
+/* Import Plus Jakarta Sans */
+
+/* Extend font styles with Plus Jakarta Sans */
+.plus-jakarta-sans {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400; /* Default weight */
+}
+.plus-jakarta-sans-bold {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 700; /* Bold weight */
+}
+.plus-jakarta-sans-light {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 300; /* Light weight */
+}
