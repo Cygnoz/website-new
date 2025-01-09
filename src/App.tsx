@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <Header />
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<div className="bg-transparent"></div>}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Servicess />} />
@@ -24,8 +24,9 @@ function App() {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/products" element={<Products />} />
         </Routes>
+        <Footer />
       </Suspense>
-      <Footer />
+     
     </>
   );
 }
