@@ -15,6 +15,7 @@ export default {
         medium: 500, // Medium weight
         bold: 700, // Bold weight
         extraBold: 800, // Extra bold weight
+        superBold: 950,
       },
     },
   },
