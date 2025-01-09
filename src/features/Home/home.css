@@ -88,25 +88,25 @@
 /* Cards layout */
 .card {
   flex: 0 0 340px; /* Default fixed size of each card */
-  height: 400px;
+  height: 450px;
   background-color: rgba(255, 255, 255, 0.03);
   border-radius: 10px;
   padding: 20px;
   text-align: center;
-  color: #ffffff;
+  color:  #F9F9F9;
 }
 
 .card h4 {
   margin-top: 20px;
   font-weight: bold;
-  color: #00bcd4;
+  color: #ffffff;
 }
 
 .card p {
   margin-top: 20px;
-  font-size: 14px;
+  font-size: 16px;
   padding: 10px 15px 10px 15px;
-  color: #f9f9f9;
+  color: #F9F9F9;
   line-height: 34px;
 }
 
@@ -227,9 +227,9 @@
   color: #3e4f65;
   padding: 0.5rem 0;
   font-size: 24px;
-  font-weight: 500;
   transition: 0.2s;
   line-height: 28px;
+  font-weight: bold;
 }
 
 /* Solution description styling */

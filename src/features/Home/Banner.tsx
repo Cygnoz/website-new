@@ -18,7 +18,7 @@ function Banner() {
             muted
             playsInline // Ensures faster initial loading
             style={{
-              opacity: "90%",
+              opacity: "100%",
               transform: "scale(1.2)",
             }}
           ></video>
@@ -55,7 +55,7 @@ function Banner() {
           {/* Title */}
           <h1 className="text-2xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight mb-4 font-extralight">
             Empowering Businesses with <br />
-            <span className="bg-gradient-to-r from-[#45B4FF] via-[#BAFFED] to-[#84CCFF] bg-clip-text text-transparent font-bold">Next-Gen Technology</span>
+            <span className="bg-gradient-to-r from-[#45B4FF] via-[#BAFFED] to-[#84CCFF] bg-clip-text text-transparent font-black">Next-Gen Technology</span>
           </h1>
 
           {/* Subtitle */}
@@ -63,7 +63,7 @@ function Banner() {
 
           {/* Call-to-Action */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
-            <button className="bg-[#0099F8] text-white px-4 sm:px-6 py-2 rounded-full text-xs sm:text-sm md:text-base font-medium hover:bg-blue-400 transition">Contact Us</button>
+            <button className="bg-[#0099F8] text-white px-4 sm:px-8 py-3 rounded-full text-xs sm:text-sm md:text-base font-medium hover:bg-blue-400 transition">Contact Us</button>
 
             {/* Trust Section */}
             <div className="flex flex-col sm:flex-row items-center sm:space-x-4 text-center sm:text-left mt-4 sm:mt-0">
@@ -73,7 +73,7 @@ function Banner() {
                 loading="lazy"
                 // className="sm:w-10 h-8 sm:h-10"
               />
-              <p className="text-xs sm:text-sm md:text-base lg:text-lg text-white text-opacity-60">
+              <p className="text-xs sm:text-sm md:text-base lg:text-lg text-white text-opacity-80">
                 Trusted by Over +20k
                 <br />
                 Clients in India

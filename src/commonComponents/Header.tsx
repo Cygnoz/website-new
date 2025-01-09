@@ -51,7 +51,7 @@ function Header() {
                   ? "/"
                   : `/${item.toLowerCase().replace(" ", "")}`
               }
-              className={`text-xl hover:text-[#64C4FF] transition-colors duration-300 ${
+              className={`text-[18px] font-400 hover:text-[#64C4FF] transition-colors duration-300 ${
                 isScrolled ? "text-white" : "text-gray-300"
               }`}
             >
@@ -122,7 +122,7 @@ function Header() {
                       ? "/"
                       : `/${item.toLowerCase().replace(" ", "")}`
                   }
-                  className="text-xl hover:text-[#64C4FF] text-white transition-colors duration-300 font-extralight"
+                  className="text-[18px] hover:text-[#64C4FF] text-white transition-colors duration-300 font-extralight"
                   onClick={closeMobileMenu}
                 >
                   {item}

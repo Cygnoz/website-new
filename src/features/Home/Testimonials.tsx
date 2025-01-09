@@ -47,7 +47,7 @@ function Testimonials({ }: Props) {
             <div className="carousel" onScroll={handleScroll}>
                 {testimonials.map((testimonial, index) => (
                     <div className="card" key={index}>
-                        <p className='h-[70%]'>{testimonial.text}</p>
+                        <p className='h-[80%] '>{testimonial.text}</p>
                         <h4 className='text-'>{testimonial.author}</h4>
                     </div>
                 ))}

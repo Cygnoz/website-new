@@ -21,7 +21,7 @@ function Footer() {
             <h3 className="text-lg font-semibold mb-4 text-[#64C4FF]">
               FEEDBACK
             </h3>
-            <h2 className="text-4xl font-normal mb-4">
+            <h2 className="text-[28px] mb-4">
               <span className="text-gray-400">
                 {" "}
                 Seeking personalized support?{" "}
@@ -110,7 +110,7 @@ function Footer() {
         <div className="space-y-10 md:ms-10">
           <div className="flex flex-wrap gap-8">
             <div className="w-full md:w-auto">
-              <h4 className="text-lg font-semibold mb-4 text-[#64C4FF]">
+              <h4 className=" font-bold text-[18px] mb-4 text-[#64C4FF]">
                 QUICK LINKS
               </h4>
               <ul className="space-y-2">
@@ -126,7 +126,7 @@ function Footer() {
               </ul>
             </div>
             <div className="w-full md:w-auto">
-              <h4 className="text-lg font-semibold mb-4 text-[#64C4FF]">
+              <h4 className="text-[18px] font-semibold mb-4 text-[#64C4FF]">
                 ABOUT US
               </h4>
               <ul className="space-y-2">
@@ -145,7 +145,7 @@ function Footer() {
           {/* Contact & Newsletter */}
           <div>
             <div className="mb-10">
-              <h4 className="text-lg font-semibold mb-4 text-[#64C4FF]">
+              <h4 className="text-[18px] font-semibold mb-4 text-[#64C4FF]">
                 CONTACT US
               </h4>
               <address className="not-italic text-sm leading-6">
@@ -169,7 +169,7 @@ function Footer() {
               </address>
             </div>
             <div>
-              <h4 className="text-lg font-semibold mb-10 text-[#64C4FF] ">
+              <h4 className="text-[18px] font-semibold mb-10 text-[#64C4FF] ">
                 SUBSCRIBE TO OUR NEWSLETTER
               </h4>
               <form className="flex flex-wrap items-center space-x-3">
@@ -282,7 +282,7 @@ function Footer() {
             <img
               src={cygnoz}
               alt="Cygnoz Logo"
-              className="w-[120px] h-auto sm:w-[140px] md:w-[150px] lg:w-[180px]"
+              className="w-[100px] h-auto sm:w-[90px] md:w-[100px] lg:w-[100px]"
             />
           </div>
 

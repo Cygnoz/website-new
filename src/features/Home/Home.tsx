@@ -76,16 +76,16 @@ function Home({ }: Props) {
             <div className="px-5 sm:px-10 md:px-20 py-16 flex flex-col lg:flex-row">
               {/* Left Section */}
               <div className="w-full lg:w-[60%] mb-10 lg:mb-0">
-                <p className="flex gap-2 mt-10">
+                <p className="flex gap-2 mt-8">
                   <Star_wide />{" "}
                   <span className="text-[#6FB7FF] text-[14px] font-[12px] py-2">
                     ABOUT US
                   </span>
                 </p>             
-                <h1 className="text-[#3E4F65] text-[32px] sm:text-[40px] md:text-[50px] font-400 py-2.5">
+                <h1 className="text-[#3E4F65] text-[32px] sm:text-[40px] md:text-[50px] font-regular py-2.5">
                   Why Companies Choose Cygnoz
                 </h1>
-                <p className="text-[#6F7B8A] text-[16px] sm:text-[18px] md:text-[20px] font-400 py-3">
+                <p className="text-[#6F7B8A] text-[16px] sm:text-[18px] md:text-[20px] font-medium py-3">
                   Cygnoz is a Tier 1 global software solutions company
                   headquartered in Kochi, Kerala, India, established in 2019.
                   Our clientele includes over 200 customers located in the Asia
@@ -179,14 +179,14 @@ function Home({ }: Props) {
 
         {/* our projects */}
         <section>
-          <div className="bg-[#F6F6F6] px-5 sm:px-10 md:px-16 lg:px-20 py-16">
+          <div className="bg-[#F6F6F6] px-5 sm:px-10 md:px-16 lg:px-20 py-8">
             <div className="flex justify-center gap-2">
               <Star_wide />
               <p className="text-[#6FB7FF] text-[12px] sm:text-[14px] font-[12px] py-2">
                 OUR PROJECT
               </p>
             </div>
-            <h1 className="text-[#3E4F65] text-center text-[32px] sm:text-[40px] md:text-[50px] font-400 py-2.5">
+            <h1 className="text-[#3E4F65] text-center text-[32px] sm:text-[40px] md:text-[50px] font-regular leading-tigh py-2.5">
               Empower Your Journey with our <br />
               Seamless Solutions
             </h1>
@@ -218,7 +218,7 @@ function Home({ }: Props) {
             ></div>
 
             {/* Content wrapper */}
-            <div className="relative z-10 px-5 sm:px-10 md:px-20 py-16">
+            <div className="relative z-10 px-5 sm:px-10 md:px-20 py-12">
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
                 <div>
                   <p className="gap-2 flex items-center">
@@ -227,12 +227,12 @@ function Home({ }: Props) {
                       SERVICES
                     </span>
                   </p>
-                  <h1 className="text-white text-[32px] leading-tight sm:text-[40px] lg:text-[48px] font-gilroy font-400 py-3">
+                  <h1 className="text-white text-[32px] leading-tight sm:text-[40px] lg:text-[48px] font-regular py-3">
                     Crafting the <br /> Future, Today
                   </h1>
                 </div>
                 <div className="text-[#E3E3E3]">
-                  <p className=" w-full text-[16px] sm:text-[18px] leading-7 md:text-[20px] py-10 font-light">
+                  <p className=" w-full text-[16px] sm:text-[18px] leading-6 md:text-[20px] py-12 font-thin">
                     We help you to build high-quality digital solutions and
                     products as well as deliver a wide range of related
                     professional services. We are providing world-class service
@@ -241,10 +241,10 @@ function Home({ }: Props) {
                 </div>
                 <div className="service-card">
                   <img className="size-14" src={fullstack} alt="" />
-                  <p className="title text-[#E7E7E7] text-[20px] sm:text-[24px] py-2 font-light">
+                  <p className="title text-[#E7E7E7] text-[20px] sm:text-[24px] py-2">
                     Full Stack Engineering
                   </p>
-                  <p className="description text-gray-400 text-[16px] sm:text-[18px] leading-5 tracking-tight">
+                  <p className="description text-gray-400 text-[16px] sm:text-[18px] font-medium  leading-5 tracking-tight">
                     Our custom web development covers front-end, back-end, and
                     enterprise solutions—ready for any challenge.
                   </p>
@@ -263,7 +263,7 @@ function Home({ }: Props) {
                     <p className="text-[#E7E7E7] text-[20px] font-light sm:text-[24px] py-2">
                       {service.p1}
                     </p>
-                    <p className="text-gray-400 text-[16px] sm:text-[18px]  leading-5 tracking-tight">
+                    <p className="text-gray-400 text-[16px] sm:text-[18px] font-medium  leading-5 tracking-tight">
                       {service.p2}
                     </p>
                   </div>
@@ -276,13 +276,14 @@ function Home({ }: Props) {
         {/* Our Process */}
         <section>
           <div
-            className="px-5 md:px-10 lg:px-20 py-10 md:py-16"
+            className="px-5 md:px-10 lg:px-20 py-10 md:py-12"
             style={{
               backgroundImage: `url(${process})`,
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
               width: "100%",
+              height:"auto",
             }}
           >
             <div className="flex justify-center items-center gap-2">
@@ -292,11 +293,11 @@ function Home({ }: Props) {
               </p>
             </div>
 
-            <h1 className="text-[#3E4F65] text-center text-[28px] md:text-[36px] lg:text-[50px] font-normal py-2.5">
+            <h1 className="text-[#3E4F65] text-center text-[25px] md:text-[30px] lg:text-[40px] font-regular py-2.5">
               How We Build Your Solutions
             </h1>
 
-            <p className="text-[#6F7B8A] text-center text-sm md:text-base lg:text-[18px] font-normal py-3">
+            <p className="text-[#6F7B8A] text-center text-sm md:text-base lg:text-[18px] font-medium py-3">
               Our rigorous development process ensures the delivery of
               high-quality, reliable, and efficient software solutions.
             </p>
@@ -310,17 +311,16 @@ function Home({ }: Props) {
         {/* TESTIMONIALS */}
         <section>
           <div
-            className="w-full min-h-[800px] bg-opacity-90"
             style={{
               backgroundImage: `url(${TESTIMONIALSImg})`,
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
               width: "100%",
-              height: "100%",
+              height: "auto",
             }}
           >
-            <div className="px-5 md:px-10 lg:px-20 py-10 md:py-16">
+            <div className="px-5 md:px-10 lg:px-20 py-10 md:py-12">
               <p className="flex items-center gap-2">
                 <Star_wide color="#FFFFFF" />
                 <span className="text-[#6FB7FF] text-[14px] font-medium">
@@ -328,12 +328,12 @@ function Home({ }: Props) {
                 </span>
               </p>
 
-              <h1 className="text-white text-[28px] md:text-[36px] lg:text-[48px] font-normal py-3">
+              <h1 className="text-white text-[28px] md:text-[36px] lg:text-[48px] font-regular py-3">
                 Join the Satisfied Customer Club
               </h1>
 
               <div className="text-[#E3E3E3]">
-                <p className="text-sm md:text-base">
+                <p className="text-sm md:text-[18px] leading-tight font-medium">
                   We help you to build high-quality digital solutions and
                   products as well as deliver a wide range of related{" "}
                   <br className="hidden md:block" /> professional services. We
