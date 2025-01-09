@@ -1,9 +1,12 @@
 import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import cygnoz from "../assets/icons/Cygnoz-logo.svg";
 
 function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+
+  const location = useLocation(); // Get the current location
 
   const closeMobileMenu = () => setIsMobileMenuOpen(false);
   const toggleMobileMenu = () => setIsMobileMenuOpen((prev) => !prev);
@@ -21,11 +24,19 @@ function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const navItems = [
+    { name: "Home", path: "/" },
+    { name: "Services", path: "/services" },
+    { name: "Products", path: "/products" },
+    { name: "About Us", path: "/aboutus" },
+    { name: "Careers", path: "/careers" },
+    { name: "Contact", path: "/contact" },
+  ];
+
   return (
     <nav
-      className={`py-4 px-5 sm:px-10 md:px-20 fixed top-0 w-full z-50 transition-colors duration-300 ${
-        isScrolled ? "bg-black text-white" : "bg-transparent text-white"
-      }`}
+      className={`py-4 px-5 sm:px-10 md:px-20 fixed top-0 w-full z-50 transition-colors duration-300 ${isScrolled ? "bg-black text-white" : "bg-transparent text-white"
+        }`}
     >
       <div className="flex justify-between items-center w-full relative">
         {/* Left Section: Logo and Company Name */}
@@ -36,29 +47,22 @@ function Header() {
 
         {/* Right Section: Navigation Links */}
         <div className="hidden md:flex space-x-10">
-          {[
-            "Home",
-            "Services",
-            "Products",
-            "About Us",
-            "Careers",
-            "Contact",
-          ].map((item, idx) => (
-            <a
+          {navItems.map((item, idx) => (
+            <Link
               key={idx}
-              href={
-                item === "Home"
-                  ? "/"
-                  : `/${item.toLowerCase().replace(" ", "")}`
-              }
-              className={`text-[18px] font-400 hover:text-[#64C4FF] transition-colors duration-300 ${
-                isScrolled ? "text-white" : "text-gray-300"
-              }`}
+              to={item.path}
+              className={`text-[16px] font-medium transition-all duration-300 ${location.pathname === item.path
+                  ? "text-gray-300 text-[18px] font-semibold scale-105" // Active state with scaling
+                  : isScrolled
+                    ? "text-white hover:text-gray-200"
+                    : "text-gray-300 hover:text-gray-400"
+                }`}
             >
-              {item}
-            </a>
+              {item.name}
+            </Link>
           ))}
         </div>
+
 
         {/* Mobile Menu Toggle (Hamburger or Close Button) */}
         <div className="md:hidden">
@@ -100,38 +104,26 @@ function Header() {
 
       {/* Mobile Navigation Menu */}
       {isMobileMenuOpen && (
-        <>
-          {/* Animated Sidebar (From Left) */}
-          <div
-            className={`md:hidden flex flex-col space-y-6 text-start bg-black min-h-screen rounded-lg p-8 fixed w-full left-0 z-50 transform transition-transform duration-1000 ease-in-out ${
-              isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
+        <div
+          className={`md:hidden flex flex-col space-y-6 text-start bg-black min-h-screen rounded-lg p-8 fixed w-full left-0 z-50 transform transition-transform duration-1000 ease-in-out ${isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
             }`}
-          >
-            {[
-              "Home",
-              "Services",
-              "Products",
-              "About Us",
-              "Careers",
-              "Contact",
-            ].map((item, idx) => (
-              <div key={idx}>
-                <a
-                  href={
-                    item === "Home"
-                      ? "/"
-                      : `/${item.toLowerCase().replace(" ", "")}`
-                  }
-                  className="text-[18px] hover:text-[#64C4FF] text-white transition-colors duration-300 font-extralight"
-                  onClick={closeMobileMenu}
-                >
-                  {item}
-                </a>
-                <hr className="border-t-2 border-gray-600 my-2" />
-              </div>
-            ))}
-          </div>
-        </>
+        >
+          {navItems.map((item, idx) => (
+            <div key={idx}>
+              <Link
+                to={item.path}
+                className={`text-[18px] hover:text-[#64C4FF] transition-colors duration-300 ${location.pathname === item.path
+                    ? "text-blue-500 font-bold" // Active state
+                    : "text-white"
+                  }`}
+                onClick={closeMobileMenu}
+              >
+                {item.name}
+              </Link>
+              <hr className="border-t-2 border-gray-600 my-2" />
+            </div>
+          ))}
+        </div>
       )}
     </nav>
   );

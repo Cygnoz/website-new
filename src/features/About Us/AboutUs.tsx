@@ -11,6 +11,7 @@ import card3 from "../../assets/Images/Group 110 (2).svg"
 import card4 from "../../assets/Images/Group 110 (3).svg"
 import card5 from "../../assets/Images/Group 110 (4).svg"
 import circles from '../../assets/Images/Group 113.svg'
+import { Link } from "react-router-dom"
 
 function AboutUs() {
   const images = [aboutus1, aboutus2, aboutus3, aboutus4, aboutus5]
@@ -37,7 +38,10 @@ function AboutUs() {
         <p className="text-center text-[#3E4F65] text-base font-gilroy md:text-lg leading-relaxed max-w-4xl mb-8">Cygnoz is a leading technology solutions provider dedicated to empowering businesses through innovation. With a team of highly skilled experts, we deliver cutting-edge solutions tailored to meet the unique needs of our clients.</p>
 
         {/* Contact Us Button */}
+        <Link to={'/contact'}>
+
         <button className="bg-[#2b9cff] text-white font-gilroy font-thin  py-3 px-6 rounded-full hover:bg-[#026BB0] transition duration-200">Contact Us</button>
+        </Link>
       </div>
       <div className="container mx-auto p-4">
         {/* For Mobile View (First Two Images Horizontally Aligned) */}
@@ -47,6 +51,7 @@ function AboutUs() {
               src={images[0]} // First Image
               alt="Image 1"
               className="absolute inset-0 w-full h-full object-cover"
+              loading="lazy"
             />
           </div>
           <div className="relative w-[50%] aspect-[3/4] overflow-hidden rounded-lg">
@@ -54,6 +59,7 @@ function AboutUs() {
               src={images[1]} // Second Image
               alt="Image 2"
               className="absolute inset-0 w-full h-full object-cover"
+              loading="lazy"
             />
           </div>
         </div>
@@ -70,6 +76,7 @@ function AboutUs() {
                 src={src}
                 alt={`Grid image ${index + 1}`}
                 className="absolute inset-0 w-full h-full object-cover"
+                loading="lazy"
               />
             </div>
           ))}
@@ -91,7 +98,7 @@ function AboutUs() {
             </h1>
             
             <p className="text-white text-justify mt-1 text-sm md:text-base max-w-full md:max-w-[400px]">
-              At Cygnos we're driven by a set of core values that guide our work and shape our culture. These values are the foundation of our success and commitment to excellence in everything we do.
+              At Cygnoz we're driven by a set of core values that guide our work and shape our culture. These values are the foundation of our success and commitment to excellence in everything we do.
             </p>
           </div>
         </div>
@@ -107,7 +114,7 @@ function AboutUs() {
           </div>
 
           <div className="w-full sm:w-auto py-6">
-            <img src={card2} loading="lazy" alt="" className="mx-auto sm:mx-0" />
+            <img src={card2} loading="lazy" alt=""  className="mx-auto sm:mx-0" />
             <h1 className="text-white font-questrial mt-2 font-bold text-center sm:text-left">Excellence</h1>
             <p className="mt-2 text-white text-center sm:text-left" style={{ whiteSpace: "pre-line" }}>
               {"We strive for excellence in everything we\n do, from the smallest detail to the largest\n project"}

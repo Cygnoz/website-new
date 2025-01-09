@@ -93,7 +93,7 @@ function Products({ }: Props) {
                                 <div className="flex flex-col lg:flex-row justify-between gap-8 mt-8">
                                     {/* Left Content */}
                                     <div className="w-full lg:w-[60%]">
-                                        <img src={sewenex} className="py-5" alt="" />
+                                        <img src={sewenex} className="py-5" alt="" loading="lazy" />
                                         <p className="text-white text-[32px] md:text-[42px] leading-tight">
                                             Comprehensive Boutique <br /> Software with POS and Analytics
                                         </p>
@@ -117,7 +117,7 @@ function Products({ }: Props) {
                                 <div className="flex flex-col lg:flex-row gap-10 py-10">
                                     {/* Image Section */}
                                     <div className="flex justify-center">
-                                        <img src={sewenexImg} alt="" />
+                                        <img src={sewenexImg} loading="lazy" alt="" />
                                     </div>
                                     {/* Video and Additional Image */}
                                     <div className="flex-1">
@@ -128,13 +128,14 @@ function Products({ }: Props) {
                                                 autoPlay
                                                 loop
                                                 muted
+                                                playsInline // Ensures faster initial loading
                                                 style={{
                                                     opacity: "100%",
                                                 }}
                                             ></video>
                                         </div>
                                         <div className="mt-8 lg:mt-16 cursor-pointer">
-                                            <img src={frameSewenex} className="rounded-3xl" alt="" />
+                                            <img src={frameSewenex} className="rounded-3xl" loading="lazy" alt="" />
                                         </div>
                                     </div>
                                 </div>
@@ -160,7 +161,7 @@ function Products({ }: Props) {
                             <div className="flex flex-col lg:flex-row justify-between gap-8">
                                 {/* Left Content */}
                                 <div className="w-full lg:w-[60%]">
-                                    <img src={bilbizzIcone} className="py-5" alt="" />
+                                    <img src={bilbizzIcone} className="py-5" loading="lazy" alt="" />
                                     <p className="text-[#3E4F65] text-[32px] md:text-[42px] leading-tight">
                                         Efficient Invoicing System
                                     </p>
@@ -193,18 +194,19 @@ function Products({ }: Props) {
                                             autoPlay
                                             loop
                                             muted
+                                            playsInline // Ensures faster initial loading
                                             style={{
                                                 opacity: "100%",
                                             }}
                                         ></video>
                                     </div>
                                     <div className="mt-8 lg:mt-[5rem] cursor-pointer">
-                                        <img src={frameBilbizz} className="rounded-3xl" alt="" />
+                                        <img src={frameBilbizz} className="rounded-3xl" loading="lazy" alt="" />
                                     </div>
                                 </div>
                                 {/* Image Section */}
                                 <div className="w-full lg:w-[50%] flex justify-center">
-                                    <img src={bilbizzImg} alt="" />
+                                    <img src={bilbizzImg} loading="lazy" alt="" />
                                 </div>
                             </div>
                         </div>
@@ -230,7 +232,7 @@ function Products({ }: Props) {
                                 <div className="flex flex-col lg:flex-row justify-between gap-8">
                                     {/* Left Content */}
                                     <div className="w-full lg:w-[60%]">
-                                        <img src={salonexIcone} className="py-5 rounded w-24" alt="" />
+                                        <img src={salonexIcone} loading="lazy" className="py-5 rounded w-24" alt="" />
                                         <p className="text-white text-[32px] md:text-[42px] leading-tight">
                                             A New Standard in Beauty and <br /> Wellness Management
                                         </p>
@@ -242,7 +244,7 @@ function Products({ }: Props) {
                                     <div className="w-full lg:w-auto pe-0 lg:pe-10">
                                         {Object.values(projects.salonex).map((point, index) => (
                                             <p key={index} className="text-white flex gap-2 py-3">
-                                                <img src={tic} alt="" />
+                                                <img src={tic} loading="lazy" alt="" />
                                                 <span className="py-2">{point}</span>
                                             </p>
                                         ))}
@@ -252,7 +254,7 @@ function Products({ }: Props) {
                                 <div className="flex flex-col lg:flex-row gap-10 py-10">
                                     {/* Image Section */}
                                     <div className="w-full lg:w-auto">
-                                        <img src={SalonexImg} alt="" />
+                                        <img src={SalonexImg} loading="lazy" alt="" />
                                     </div>
                                     {/* Video Section */}
                                     <div className="flex-1">
@@ -266,10 +268,11 @@ function Products({ }: Props) {
                                                 style={{
                                                     opacity: "100%",
                                                 }}
+                                                playsInline // Ensures faster initial loading
                                             ></video>
                                         </div>
                                         <div className="mt-8 lg:mt-16 cursor-pointer">
-                                            <img src={frameSalonex} className="rounded-3xl" alt="" />
+                                            <img src={frameSalonex} loading="lazy" className="rounded-3xl" alt="" />
                                         </div>
                                     </div>
                                 </div>
@@ -295,7 +298,7 @@ function Products({ }: Props) {
                             <div className="flex flex-col lg:flex-row justify-between gap-8">
                                 {/* Left Content */}
                                 <div className="w-full lg:w-[60%]">
-                                    <img src={nexdIcone} className="py-5" alt="" />
+                                    <img src={nexdIcone} className="py-5" loading="lazy" alt="" />
                                     <p className="text-[#3E4F65] text-[32px] md:text-[42px] leading-tight">
                                         Automate all-in-one <br /> management platform
                                     </p>
@@ -326,15 +329,16 @@ function Products({ }: Props) {
                                             style={{
                                                 opacity: "100%",
                                             }}
+                                            playsInline // Ensures faster initial loading
                                         ></video>
                                     </div>
                                     <div className="mt-8 lg:mt-[5rem] cursor-pointer">
-                                        <img src={framenexd} className="rounded-3xl" alt="" />
+                                        <img src={framenexd} loading="lazy" className="rounded-3xl" alt="" />
                                     </div>
                                 </div>
                                 {/* Image Section */}
                                 <div className="w-full lg:w-[50%] flex justify-center">
-                                    <img src={nexdImg} alt="" />
+                                    <img src={nexdImg} loading="lazy" alt="" />
                                 </div>
                             </div>
                         </div>

@@ -65,7 +65,7 @@ const ContactPage = () => {
 
           <div className="p-8 flex flex-col lg:flex-row gap-8">
             <div className=" ">
-              <img src={contactimg} alt="Contact" className="" />
+              <img src={contactimg} alt="Contact" loading="lazy" className="" />
             </div>
             <div className=" lg:w-[743px] lg:h-[506px] lg:gap-[48px]">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
@@ -131,6 +131,7 @@ const ContactPage = () => {
                 className="rounded-t-lg object-cover"
                 src={indiagate}
                 alt="India Gate"
+                loading="lazy"
               />
             </div>
             <div className="flex gap-4 bg-[#1F1F26] h-[303px] py-10">
@@ -139,6 +140,7 @@ const ContactPage = () => {
                   className="bg-[#EBFCFF] object-cover rounded-full w-[56px] h-[56px]"
                   src={loc}
                   alt="Location"
+                  loading="lazy"
                 />
               </div>
               <div>
@@ -160,6 +162,7 @@ const ContactPage = () => {
                 className="rounded-t-lg object-cover"
                 src={burj}
                 alt="Burj Khalifa"
+                loading="lazy"
               />
             </div>
             <div className="flex gap-4 bg-[#1F1F26] h-[303px] py-10">
@@ -168,6 +171,7 @@ const ContactPage = () => {
                   className="bg-[#EBFCFF] object-cover rounded-full w-[56px] h-[56px]"
                   src={loc}
                   alt="Location"
+                  loading="lazy"
                 />
               </div>
               <div>

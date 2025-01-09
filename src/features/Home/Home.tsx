@@ -43,12 +43,12 @@ function Home({ }: Props) {
     {
       icon: analytics,
       p1: "Analytics Engineering",
-      p2: "Our custom web development covers front-end, band-end, and enterprise solutions-ready for any challenge",
+      p2: "Our custom web development covers front-end, back-end, and enterprise solutions-ready for any challenge",
     },
     {
       icon: cyber,
       p1: "Cyber Security",
-      p2: "our cybersecurity engineering services fortify businesses against emerging threats",
+      p2: "Our cybersecurity engineering services fortify businesses against emerging threats",
     },
     {
       icon: Digital,
@@ -183,7 +183,7 @@ function Home({ }: Props) {
             <div className="flex justify-center gap-2">
               <Star_wide />
               <p className="text-[#6FB7FF] text-[12px] sm:text-[14px] font-[12px] py-2">
-                OUR PROJECT
+                OUR PROJECTS
               </p>
             </div>
             <h1 className="text-[#3E4F65] text-center text-[32px] sm:text-[40px] md:text-[50px] font-regular leading-tigh py-2.5">
@@ -240,7 +240,7 @@ function Home({ }: Props) {
                   </p>
                 </div>
                 <div className="service-card">
-                  <img className="size-14" src={fullstack} alt="" />
+                  <img className="size-14" loading="lazy" src={fullstack} alt="" />
                   <p className="title text-[#E7E7E7] text-[20px] sm:text-[24px] py-2">
                     Full Stack Engineering
                   </p>
@@ -259,6 +259,7 @@ function Home({ }: Props) {
                       className="size-14"
                       src={service.icon}
                       alt={service.p1}
+                      loading="lazy"
                     />
                     <p className="text-[#E7E7E7] text-[20px] font-light sm:text-[24px] py-2">
                       {service.p1}

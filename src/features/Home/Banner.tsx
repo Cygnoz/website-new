@@ -3,6 +3,7 @@ import clients from "../../assets/icons/clients.svg"
 import star from "../../assets/icons/AMk1eXIzzjYQwO3lBV61vl7c819FzRa89v0MlUZRrlmkPREt0rSJxD7kd2TM3N9M1-jlqRLppXI2fo40tSpVxw 1.svg"
 import bannervideo from "../../assets/icons/343f2ae5-cc22-4bf5-98d2-59327775cd9b.mp4"
 import "./Banner.css"
+import { Link } from "react-router-dom"
 
 function Banner() {
   return (
@@ -63,7 +64,9 @@ function Banner() {
 
           {/* Call-to-Action */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
+            <Link to={'/contact'}>
             <button className="bg-[#0099F8] text-white px-4 sm:px-8 py-3 rounded-full text-xs sm:text-sm md:text-base font-medium hover:bg-blue-400 transition">Contact Us</button>
+            </Link>
 
             {/* Trust Section */}
             <div className="flex flex-col sm:flex-row items-center sm:space-x-4 text-center sm:text-left mt-4 sm:mt-0">
