@@ -24,9 +24,9 @@ const Carousel = () => {
             content: (
                 <div className="flex flex-col md:flex-row gap-10">
                     <div className="flex-1">
-                        <div className="w-full">
+                        <div className="w-full rounded-xl overflow-hidden">
                             <video
-                                className=" object-cover transform scale-110 transition-all duration-500 ease-in-out"
+                                className="object-cover transform scale-110 transition-all duration-500 ease-in-out"
                                 src={bilbizzvideo}
                                 autoPlay
                                 playsInline
@@ -34,7 +34,6 @@ const Carousel = () => {
                                 muted
                                 style={{
                                     opacity: "100%",
-
                                 }}
                             ></video>
                         </div>
@@ -83,7 +82,7 @@ const Carousel = () => {
                         <img className="w-full h-auto object-cover" loading="lazy" src={swenex} alt="" />
                     </div>
                     <div className="flex-1 ">
-                        <div className="w-full">
+                        <div className="w-full rounded-xl overflow-hidden">
                             <video
                                 className=" object-cover pe-7 transform scale-110 transition-all duration-500 ease-in-out"
                                 src={swenexvideo}
@@ -132,7 +131,7 @@ const Carousel = () => {
             content: (
                 <div className="flex flex-col md:flex-row gap-10">
                     <div className="flex-1">
-                        <div className="w-full">
+                        <div className="w-full rounded-xl overflow-hidden">
                             <video
                                 className=" object-cover transform scale-110 transition-all duration-500 ease-in-out"
                                 src={salonexvideo}
@@ -142,7 +141,7 @@ const Carousel = () => {
                                 muted
                                 style={{
                                     opacity: "100%",
-                                    
+
                                 }}
                             ></video>
                         </div>
@@ -190,7 +189,7 @@ const Carousel = () => {
                         <img className="w-full h-auto object-cover rounded-[20px]" loading="lazy" src={nexd} alt="" />
                     </div>
                     <div className="flex-1">
-                        <div className="w-full">
+                        <div className="w-full rounded-xl overflow-hidden">
                             <video
                                 className=" object-cover transform scale-110 transition-all duration-500 ease-in-out"
                                 src={nexdvideo}
