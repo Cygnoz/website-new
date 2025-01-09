@@ -29,6 +29,7 @@ const Carousel = () => {
                                 className=" object-cover transform scale-110 transition-all duration-500 ease-in-out"
                                 src={bilbizzvideo}
                                 autoPlay
+                                playsInline
                                 loop
                                 muted
                                 style={{
@@ -48,7 +49,7 @@ const Carousel = () => {
                                 height: "auto",
                             }}>
                             <button className="button-1 bg-[#004B49] rounded-lg text-white px-3 sm:px-4 py-2">
-                                <img src={bilbizzicon} alt="" />
+                                <img src={bilbizzicon} loading="lazy" alt="" />
                             </button>
                             <p className="second-p text-[#3E4F65] text-[20px] sm:text-[22px] md:text-[25px] font-medium py-2 ">
                                 Efficient Invoicing System
@@ -68,7 +69,7 @@ const Carousel = () => {
 
                     </div>
                     <div className="flex-1">
-                        <img className="w-full h-auto object-cover" src={billbizz} alt="" />
+                        <img className="w-full h-auto object-cover" loading="lazy" src={billbizz} alt="" />
                     </div>
 
                 </div>
@@ -79,7 +80,7 @@ const Carousel = () => {
             content: (
                 <div className="flex flex-col md:flex-row gap-10">
                     <div className="flex-1">
-                        <img className="w-full h-auto object-cover" src={swenex} alt="" />
+                        <img className="w-full h-auto object-cover" loading="lazy" src={swenex} alt="" />
                     </div>
                     <div className="flex-1 ">
                         <div className="w-full">
@@ -88,6 +89,7 @@ const Carousel = () => {
                                 src={swenexvideo}
                                 autoPlay
                                 loop
+                                playsInline
                                 muted
                                 style={{
                                     opacity: "100%",
@@ -135,6 +137,7 @@ const Carousel = () => {
                                 className=" object-cover transform scale-110 transition-all duration-500 ease-in-out"
                                 src={salonexvideo}
                                 autoPlay
+                                playsInline
                                 loop
                                 muted
                                 style={{
@@ -155,7 +158,7 @@ const Carousel = () => {
                                 maxHeight: "300px"
                             }}>
                             <button className="px-3 sm:px-4">
-                                <img src={salonexcon} alt="" />
+                                <img src={salonexcon} loading="lazy" alt="" />
                             </button>
                             <p className="text-[#3E4F65] text-[20px] sm:text-[22px] leading-7 md:text-[25px] font-medium py-2">
                                 A New Standard in Beauty and Wellness Management
@@ -174,7 +177,7 @@ const Carousel = () => {
                         </div>
                     </div>
                     <div className="flex-1">
-                        <img className="w-full h-auto object-cover" src={salonex} alt="" />
+                        <img className="w-full h-auto object-cover" loading="lazy" src={salonex} alt="" />
                     </div>
                 </div>
             ),
@@ -184,7 +187,7 @@ const Carousel = () => {
             content: (
                 <div className="flex flex-col md:flex-row gap-10">
                     <div className="flex-1">
-                        <img className="w-full h-auto object-cover rounded-[20px]" src={nexd} alt="" />
+                        <img className="w-full h-auto object-cover rounded-[20px]" loading="lazy" src={nexd} alt="" />
                     </div>
                     <div className="flex-1">
                         <div className="w-full">
@@ -192,6 +195,7 @@ const Carousel = () => {
                                 className=" object-cover transform scale-110 transition-all duration-500 ease-in-out"
                                 src={nexdvideo}
                                 autoPlay
+                                playsInline
                                 loop
                                 muted
                                 style={{
@@ -211,7 +215,7 @@ const Carousel = () => {
                                 maxHeight: "240px"
                             }}>
                             <button className="px-3 sm:px-4 ">
-                                <img src={nexdicon} alt="" />
+                                <img src={nexdicon} loading="lazy" alt="" />
                             </button>
                             <p className="text-[#3E4F65] text-[20px] sm:text-[22px] leading-7 md:text-[25px] font-medium ">
                                 Automate all-in-one management platform.
@@ -264,7 +268,7 @@ const Carousel = () => {
                     className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white p-2 rounded-full shadow"
                     onClick={nextSlide}
                 >
-                    <img className="w-10" src={right} alt="Next" />
+                    <img className="w-10" src={right} loading="lazy" alt="Next" />
                 </button>
             )}
         </div>

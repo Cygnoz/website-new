@@ -99,7 +99,7 @@ function AboutUs() {
         {/* Cards Row 1 */}
         <div className="flex flex-wrap justify-center md:justify-start gap-8 px-8 md:px-20 lg:px-40">
           <div className="w-full sm:w-auto py-6">
-            <img src={card1} alt="" className="mx-auto sm:mx-0" />
+            <img src={card1} loading="lazy" alt="" className="mx-auto sm:mx-0" />
             <h1 className="text-white font-questrial mt-2 font-bold text-center sm:text-left">Innovation</h1>
             <p className="mt-2 text-white text-center sm:text-left" style={{ whiteSpace: "pre-line" }}>
               {"We embrace innovation and continuously \n seek new ways to improve our services."}
@@ -107,7 +107,7 @@ function AboutUs() {
           </div>
 
           <div className="w-full sm:w-auto py-6">
-            <img src={card2} alt="" className="mx-auto sm:mx-0" />
+            <img src={card2} loading="lazy" alt="" className="mx-auto sm:mx-0" />
             <h1 className="text-white font-questrial mt-2 font-bold text-center sm:text-left">Excellence</h1>
             <p className="mt-2 text-white text-center sm:text-left" style={{ whiteSpace: "pre-line" }}>
               {"We strive for excellence in everything we\n do, from the smallest detail to the largest\n project"}
@@ -115,7 +115,7 @@ function AboutUs() {
           </div>
 
           <div className="w-full sm:w-auto py-6">
-            <img src={card3} alt="" className="mx-auto sm:mx-0" />
+            <img src={card3} loading="lazy" alt="" className="mx-auto sm:mx-0" />
             <h1 className="text-white font-questrial mt-2 font-bold text-center sm:text-left">Integrity</h1>
             <p className="mt-2 text-white text-center sm:text-left" style={{ whiteSpace: "pre-line" }}>
               {"We uphold the highest standards of\n honesty, transparency, and ethical behavior"}
@@ -126,7 +126,7 @@ function AboutUs() {
         {/* Cards Row 2 */}
         <div className="flex flex-wrap justify-center md:justify-start gap-8 px-8 md:px-20 lg:px-40">
           <div className="w-full sm:w-auto py-6">
-            <img src={card4} alt="" className="mx-auto sm:mx-0" />
+            <img src={card4}  alt="" loading="lazy" className="mx-auto sm:mx-0" />
             <h1 className="text-white font-questrial mt-2 font-bold text-center sm:text-left">Collaboration</h1>
             <p className="mt-2 text-white text-center sm:text-left" style={{ whiteSpace: "pre-line" }}>
               {"We foster a collaborative environment\n where teamwork and open\n communication thrive"}
@@ -134,7 +134,7 @@ function AboutUs() {
           </div>
 
           <div className="w-full sm:w-auto py-6">
-            <img src={card5} alt="" className="mx-auto sm:mx-0" />
+            <img src={card5} loading="lazy" alt="" className="mx-auto sm:mx-0" />
             <h1 className="text-white font-questrial mt-2 font-bold text-center sm:text-left">Customer Focus</h1>
             <p className="mt-2 text-white text-center sm:text-left" style={{ whiteSpace: "pre-line" }}>
               {"We prioritize the needs of our clients and\n are committed to delivering exceptional\n value"}
@@ -144,7 +144,7 @@ function AboutUs() {
 
         {/* Circles */}
         <div className="flex justify-end -mt-48 lg:-mt-96 -z-10">
-          <img src={circles} alt="" className="w-3/4 md:w-1/2 lg:w-1/3" />
+          <img src={circles} loading="lazy" alt="" className="w-3/4 md:w-1/2 lg:w-1/3" />
         </div>
       </section>
 
