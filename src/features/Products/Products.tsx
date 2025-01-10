@@ -114,6 +114,8 @@ function Products({ }: Props) {
                                         ))}
                                     </div>
                                 </div>
+
+                                
                                 <div className="flex flex-col lg:flex-row gap-10 py-10">
                                     {/* Image Section */}
                                     <div className="flex justify-center">
@@ -121,7 +123,11 @@ function Products({ }: Props) {
                                     </div>
                                     {/* Video and Additional Image */}
                                     <div className="flex-1">
-                                        <div className="w-full p-5 rounded-xl overflow-hidden">
+                                        <div className="rounded-xl overflow-hidden"
+                                        style={{
+                                            maxWidth:"660px",
+                                            maxHeight:"360px"
+                                        }}>
                                             <video
                                                 className="object-cover transform scale-110 transition-all duration-500 ease-in-out"
                                                 src={swenexvideo}
@@ -134,7 +140,7 @@ function Products({ }: Props) {
                                                 }}
                                             ></video>
                                         </div>
-                                        <div className="mt-8 lg:mt-16 cursor-pointer">
+                                        <div className="mt-8 cursor-pointer">
                                             <img src={frameSewenex} className="rounded-3xl" loading="lazy" alt="" />
                                         </div>
                                     </div>
@@ -187,7 +193,11 @@ function Products({ }: Props) {
                             <div className="flex flex-col lg:flex-row gap-10 py-10">
                                 {/* Video Section */}
                                 <div className="flex-1">
-                                    <div className="w-full p-5 rounded-xl overflow-hidden">
+                                    <div className=" p-5 rounded-xl overflow-hidden"
+                                    style={{
+                                        maxWidth:"660px",
+                                        maxHeight:"360px"
+                                    }}>
                                         <video
                                             className="object-cover transform scale-110 transition-all duration-500 ease-in-out"
                                             src={bilbizzvideo}
@@ -258,7 +268,11 @@ function Products({ }: Props) {
                                     </div>
                                     {/* Video Section */}
                                     <div className="flex-1">
-                                        <div className="w-full p-5 rounded-xl overflow-hidden">
+                                        <div className="p-5 rounded-xl overflow-hidden"
+                                        style={{
+                                            maxWidth:"660px",
+                                            maxHeight:"360px"
+                                        }}>
                                             <video
                                                 className="object-cover transform scale-110 transition-all duration-500 ease-in-out"
                                                 src={salonexvideo}
@@ -271,7 +285,8 @@ function Products({ }: Props) {
                                                 playsInline // Ensures faster initial loading
                                             ></video>
                                         </div>
-                                        <div className="mt-8 lg:mt-16 cursor-pointer">
+                                        <div className="mt-8 cursor-pointer"
+                                        >
                                             <img src={frameSalonex} loading="lazy" className="rounded-3xl" alt="" />
                                         </div>
                                     </div>
@@ -319,7 +334,11 @@ function Products({ }: Props) {
                             <div className="flex flex-col lg:flex-row gap-10 py-10">
                                 {/* Video Section */}
                                 <div className="flex-1">
-                                    <div className="w-full p-5 rounded-xl overflow-hidden">
+                                    <div className=" p-5 rounded-xl overflow-hidden"
+                                    style={{
+                                        maxWidth:"660px",
+                                        maxHeight:"360px"
+                                    }}>
                                         <video
                                             className="object-cover transform scale-110 transition-all duration-500 ease-in-out"
                                             src={nexdvideo}
@@ -332,7 +351,7 @@ function Products({ }: Props) {
                                             playsInline // Ensures faster initial loading
                                         ></video>
                                     </div>
-                                    <div className="mt-8 lg:mt-[5rem] cursor-pointer">
+                                    <div className="mt-8 cursor-pointer">
                                         <img src={framenexd} loading="lazy" className="rounded-3xl" alt="" />
                                     </div>
                                 </div>
