@@ -21,8 +21,8 @@ function Careers() {
       {/* Background Grid */}
       <BackgroundGrid width="100%" height="100%" />
 
-      <div className="container mx-auto">
-        <div className="block md:flex gap-8 p-4">
+      <div className="mx-5">
+        <div className="block md:flex gap-12 p-4">
           {/* Left Section */}
           <div className="">
             <div className="p-4 mt-5 flex w-full">
@@ -59,7 +59,7 @@ function Careers() {
           </div>
 
           {/* Right Section */}
-          <div className="relative p-4">
+          <div className="relative ms-5">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               {/* Main large image */}
               <div className="col-span-2">
@@ -83,7 +83,10 @@ function Careers() {
       {/* we're hiring */}
 
       <section id="vacancies">
-        <div className="bg-[#F5FAFC]">
+        <div className="bg-[#F5FAFC] ">
+          <div className="mx-7">
+
+          
           <div className="p-4 mt-5 flex w-full">
             <div className="flex justify-start mt-7">
               <Wide />
@@ -253,6 +256,7 @@ function Careers() {
                 </span>
               </div>
             </div>
+          </div>
           </div>
         </div>
       </section>

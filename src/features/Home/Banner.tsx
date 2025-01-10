@@ -8,23 +8,20 @@ import { Link } from "react-router-dom"
 function Banner() {
   return (
     <>
-      <div className="relative w-full lg:h-[730px]  h-[830px] overflow-hidden">
+      <div className="relative w-full h-[830px] lg:h-[730px] overflow-hidden">
         {/* Gradient Background */}
-        <div className="absolute  pt-9">
+        <div className="absolute inset-0">
           <video
-            className="w-[1446px] lg:h-[700px] h-[830px] object-cover transform scale-110 transition-all duration-500 ease-in-out"
+            className="w-full h-full object-cover transform scale-110 lg:scale-125 transition-transform duration-500 ease-in-out"
             src={bannervideo}
             autoPlay
             loop
             muted
-            playsInline // Ensures faster initial loading
-            style={{
-              opacity: "100%",
-              transform: "scale(1.2)",
-            }}
+            playsInline
           ></video>
         </div>
 
+        {/* Background Image */}
         <div
           className="absolute inset-0 z-10"
           style={{
@@ -35,6 +32,8 @@ function Banner() {
             opacity: "100%",
           }}
         ></div>
+
+        {/* Radial Gradient */}
         <div
           className="absolute inset-0 z-10 "
           style={{
@@ -86,6 +85,7 @@ function Banner() {
           </div>
         </div>
       </div>
+
     </>
   )
 }

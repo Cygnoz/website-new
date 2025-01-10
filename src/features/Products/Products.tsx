@@ -116,7 +116,7 @@ function Products({ }: Props) {
                                 </div>
 
                                 
-                                <div className="flex flex-col lg:flex-row gap-10 py-10">
+                                <div className="flex flex-col lg:flex-row gap-10 py-10 mx-6">
                                     {/* Image Section */}
                                     <div className="flex justify-center">
                                         <img src={sewenexImg} loading="lazy" alt="" />

@@ -1,0 +1,1 @@
+const s="/assets/6nexd-90763268.svg",e="/assets/billbizz-ea8d0a2f.mp4",a="/assets/Sewnex_1-c569a0d1.mp4",n="/assets/Elevate salon operations with comprehensive tools for seamless management and satisfaction.-fa3e217f.mp4",o="/assets/Precision management for car detailing studios_ ensuring exceptional workflow and service.-b73aac5d.mp4";export{n as a,e as b,s as c,o as n,a as s};
