@@ -21,7 +21,7 @@ import image4 from "../../assets/Images/Thumbnail3.svg";
 import image5 from "../../assets/Images/Thumbnail4.svg";
 import image6 from "../../assets/Images/Thumbnail5.svg";
 import image7 from "../../assets/Images/Thumbnail6.svg";
-import TESTIMONIALSImg from "../../assets/Images/image3.png";
+import TESTIMONIALSImg from "../../assets/Images/Testimonialbg.png";
 
 import "./home.css";
 import Banner from "./Banner";

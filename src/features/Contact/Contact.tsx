@@ -27,9 +27,9 @@ const ContactPage = () => {
     },
   ];
   return (
-    <div className=" pt-10">
+    <div className=" pt-20">
       <main>
-        <section className="bg-white pt-5 shadow rounded-lg">
+        <section className="bg-white pt-5 shadow rounded-lg px-10">
           <div className="flex justify-center lg:justify-start items-center space-x-2 mb-4 px-8">
             <Star_wide />
             <h3 className="text-sm sm:text-lg font-medium text-blue-300 tracking-wide">
@@ -37,7 +37,7 @@ const ContactPage = () => {
             </h3>
           </div>
           <div className="flex flex-col md:flex-row justify-between px-8">
-            <h2 className="text-5xl font-bold mb-6 text-[#3E4F65]">
+            <h2 className="text-5xl font-bold my-3 text-[#3E4F65]">
               Get in touch with us. We're <br /> here to assist you.
             </h2>
             <div className="flex lg:flex-col gap-2 items-start md:items-end">
@@ -67,9 +67,9 @@ const ContactPage = () => {
             <div className=" ">
               <img src={contactimg} alt="Contact" loading="lazy" className="" />
             </div>
-            <div className=" lg:w-[743px] lg:h-[506px] lg:gap-[48px]">
+            <div className=" lg:w-[730px] lg:h-[506px] lg:gap-[48px]">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-                <div className="h-[78px]">
+                <div className="">
                   <label className="block px-1 text-18px text-[#3E4F65]">
                     Your Name
                   </label>
@@ -78,7 +78,7 @@ const ContactPage = () => {
                     className="lg:m-4 m-2 w-full border-0 border-b border-[#CACACA] focus:border-blue-500 focus:ring-0 focus:outline-none"
                   />
                 </div>
-                <div className="h-[78px]">
+                <div className="">
                   <label className="block px-1 text-18px text-[#3E4F65]">
                     Phone Number (optional)
                   </label>
@@ -88,7 +88,7 @@ const ContactPage = () => {
                   />
                 </div>
               </div>
-              <div className="h-[78px]">
+              <div className="py-10">
                 <label className="block px-1 text-18px text-[#3E4F65]">
                   Email
                 </label>
@@ -106,8 +106,8 @@ const ContactPage = () => {
                   className="lg:m-4  w-full border-0 border-b border-[#CACACA] focus:border-blue-500 focus:ring-0 focus:outline-none"
                 ></textarea>
               </div>
-              <div className="pt-8">
-                <button className="bg-[#0099F8] flex justify-center items-center py-2 px-4 gap-1 rounded-3xl font-light text-xl text-white w-full sm:w-[290px] h-[60px]">
+              <div className="pt-10">
+                <button className="bg-[#0099F8] flex justify-center items-center px-4 gap-1 rounded-3xl font-light text-xl text-white w-full sm:w-[290px] h-[50px]">
                   Leave us a Message{" "}
                   <img src={arrow} className="w-6 mt-[2px]" alt="Arrow" />
                 </button>

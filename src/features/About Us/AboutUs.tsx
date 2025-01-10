@@ -88,62 +88,62 @@ function AboutUs() {
       {/* guidelines and priciples section */}
 
       <section className="bg-[#0380CE] mt-40">
-        <div className="container px-8 md:px-20 lg:px-40 py-12">
-          <div className="flex flex-col md:flex-row justify-between items-start gap-6">
+        <div className="container px-8 md:px-20 lg:px-20 py-12">
+          <div className="flex flex-col md:flex-row justify-between items-start gap-2">
             {/* <h1 className=" text-[#BEF3FF] text-xl sm:text-2xl md:text-[40px]  max-w-full md:max-w-[500px] whitespace-pre-line">
               {"Our Guiding Principles:\nA Commitment to\nExcellence"}
             </h1> */}
-            <h1 className="text-[#BEF3FF] text-xl  text-[45px] max-w-full md:max-w-[500px]  leading-tight">
+            <h1 className="text-[#BEF3FF]  text-[45px] max-w-full md:max-w-[500px]  leading-tight">
             Our Guiding Principles: <br /> A Commitment to Excellence
             </h1>
             
-            <p className="text-white text-justify mt-1 text-sm md:text-base max-w-full md:max-w-[400px]">
+            <p className="text-white text-justify mt-1 text-sm md:text-base max-w-full md:max-w-[450px]">
               At Cygnoz we're driven by a set of core values that guide our work and shape our culture. These values are the foundation of our success and commitment to excellence in everything we do.
             </p>
           </div>
         </div>
 
         {/* Cards Row 1 */}
-        <div className="flex flex-wrap justify-center md:justify-start gap-8 px-8 md:px-20 lg:px-40">
+        <div className="flex flex-wrap justify-center md:justify-start gap-8 px-8 md:px-20 lg:px-20">
           <div className="w-full sm:w-auto py-6">
             <img src={card1} loading="lazy" alt="" className="mx-auto sm:mx-0" />
-            <h1 className="text-white font-questrial mt-2 font-bold text-center sm:text-left">Innovation</h1>
-            <p className="mt-2 text-white text-center sm:text-left" style={{ whiteSpace: "pre-line" }}>
+            <h1 className="text-white font-questrial mt-2 font-regular text-[24px] text-center sm:text-left">Innovation</h1>
+            <p className="mt-2 text-white text-center text-[16px] sm:text-left" style={{ whiteSpace: "pre-line" }}>
               {"We embrace innovation and continuously \n seek new ways to improve our services."}
             </p>
           </div>
 
           <div className="w-full sm:w-auto py-6">
             <img src={card2} loading="lazy" alt=""  className="mx-auto sm:mx-0" />
-            <h1 className="text-white font-questrial mt-2 font-bold text-center sm:text-left">Excellence</h1>
-            <p className="mt-2 text-white text-center sm:text-left" style={{ whiteSpace: "pre-line" }}>
+            <h1 className="text-white font-questrial mt-2 font-regular text-[24px] text-center sm:text-left">Excellence</h1>
+            <p className="mt-2 text-white text-[16px] text-center sm:text-left" style={{ whiteSpace: "pre-line" }}>
               {"We strive for excellence in everything we\n do, from the smallest detail to the largest\n project"}
             </p>
           </div>
 
           <div className="w-full sm:w-auto py-6">
             <img src={card3} loading="lazy" alt="" className="mx-auto sm:mx-0" />
-            <h1 className="text-white font-questrial mt-2 font-bold text-center sm:text-left">Integrity</h1>
-            <p className="mt-2 text-white text-center sm:text-left" style={{ whiteSpace: "pre-line" }}>
+            <h1 className="text-white font-questrial mt-2 font-regular text-[24px] text-center sm:text-left">Integrity</h1>
+            <p className="mt-2 text-white text-[16px] text-center sm:text-left" style={{ whiteSpace: "pre-line" }}>
               {"We uphold the highest standards of\n honesty, transparency, and ethical behavior"}
             </p>
           </div>
         </div>
 
         {/* Cards Row 2 */}
-        <div className="flex flex-wrap justify-center md:justify-start gap-8 px-8 md:px-20 lg:px-40">
+        <div className="flex flex-wrap justify-center md:justify-start gap-8 px-8 md:px-20 lg:px-20">
           <div className="w-full sm:w-auto py-6">
             <img src={card4}  alt="" loading="lazy" className="mx-auto sm:mx-0" />
-            <h1 className="text-white font-questrial mt-2 font-bold text-center sm:text-left">Collaboration</h1>
-            <p className="mt-2 text-white text-center sm:text-left" style={{ whiteSpace: "pre-line" }}>
+            <h1 className="text-white font-questrial mt-2 font-regular text-[24px] text-center sm:text-left">Collaboration</h1>
+            <p className="mt-2 text-white text-[16px] text-center sm:text-left" style={{ whiteSpace: "pre-line" }}>
               {"We foster a collaborative environment\n where teamwork and open\n communication thrive"}
             </p>
           </div>
 
           <div className="w-full sm:w-auto py-6">
             <img src={card5} loading="lazy" alt="" className="mx-auto sm:mx-0" />
-            <h1 className="text-white font-questrial mt-2 font-bold text-center sm:text-left">Customer Focus</h1>
-            <p className="mt-2 text-white text-center sm:text-left" style={{ whiteSpace: "pre-line" }}>
+            <h1 className="text-white font-questrial mt-2 font-regular text-[24px] text-center sm:text-left">Customer Focus</h1>
+            <p className="mt-2 text-white text-[16px] text-center sm:text-left" style={{ whiteSpace: "pre-line" }}>
               {"We prioritize the needs of our clients and\n are committed to delivering exceptional\n value"}
             </p>
           </div>

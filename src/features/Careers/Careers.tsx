@@ -265,8 +265,8 @@ function Careers() {
 
         <div className="flex w-full p-4 bg-white justify-center items-center">
           <div className="text-center p-2">
-            <h1 className="font-questrial text-[#3E4F65] md:text-5xl font-normal leading-tight max-w-6xl mb-6 mx-auto">
-              Life @ cygnoz
+            <h1 className=" text-[#3E4F65] text-[48px] font-regular leading-tight max-w-6xl mb-6 mx-auto">
+              Life @ CYGNOZ
             </h1>
             <p className="text-[#6F7B8A] p-4">
               At Cygnoz, we foster a vibrant and collaborative environment where innovation meets excellence. Our team is a close-knit community of passionate professionals dedicated to delivering cutting-edge solutions in the cloud computing space.

@@ -289,7 +289,7 @@ function Footer() {
           {/* Footer Section */}
           <div className="text-center mt-10 sm:mt-6 md:absolute md:bottom-0 md:right-0 p-4">
             <p className="text-gray-500 text-sm sm:text-base lg:text-lg">
-              © 2024 — Copyright
+              © 2025 — Copyright
             </p>
           </div>
         </div>

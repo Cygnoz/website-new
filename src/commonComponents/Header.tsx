@@ -24,6 +24,11 @@ function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Scroll to top on location change
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
+  }, [location.pathname]); // Trigger on route changes
+
   const navItems = [
     { name: "Home", path: "/" },
     { name: "Services", path: "/services" },
@@ -35,14 +40,23 @@ function Header() {
 
   return (
     <nav
-      className={`py-4 px-5 sm:px-10 md:px-20 fixed top-0 w-full z-50 transition-colors duration-300 ${isScrolled ? "bg-black text-white" : "bg-transparent text-white"
-        }`}
+      className={`py-4 px-5 sm:px-10 md:px-20 fixed top-0 w-full z-50 transition-colors duration-300 ${
+        isScrolled ? "bg-black text-white" : "bg-transparent text-white"
+      }`}
     >
       <div className="flex justify-between items-center w-full relative">
         {/* Left Section: Logo and Company Name */}
         <div className="flex items-center">
           <img src={cygnoz} alt="Cygnoz Logo" className="w-[40px] h-[40px]" />
-          <span className="text-2xl font-semibold">Cygnoz</span>
+          <span
+            className={`text-2xl font-semibold ${
+              ["/aboutus", "/careers", "/contact"].includes(location.pathname)
+                ? "text-[#0380CE]" // Set header color to blue
+                : "text-white" // Default color
+            }`}
+          >
+            Cygnoz
+          </span>
         </div>
 
         {/* Right Section: Navigation Links */}
@@ -51,18 +65,18 @@ function Header() {
             <Link
               key={idx}
               to={item.path}
-              className={`text-[16px] font-medium transition-all duration-300 ${location.pathname === item.path
+              className={`text-[16px] font-medium transition-all duration-300 ${
+                location.pathname === item.path
                   ? "text-gray-300 text-[18px] font-semibold scale-105" // Active state with scaling
                   : isScrolled
-                    ? "text-white hover:text-gray-200"
-                    : "text-gray-300 hover:text-gray-400"
-                }`}
+                  ? "text-white hover:text-gray-200"
+                  : "text-gray-300 hover:text-gray-400"
+              }`}
             >
               {item.name}
             </Link>
           ))}
         </div>
-
 
         {/* Mobile Menu Toggle (Hamburger or Close Button) */}
         <div className="md:hidden">
@@ -73,7 +87,7 @@ function Header() {
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
-                className="w-6 h-6 text-white "
+                className="w-6 h-6 text-white"
               >
                 <path
                   strokeLinecap="round"
@@ -105,17 +119,19 @@ function Header() {
       {/* Mobile Navigation Menu */}
       {isMobileMenuOpen && (
         <div
-          className={`md:hidden flex flex-col space-y-6 text-start bg-black min-h-screen rounded-lg p-8 fixed w-full left-0 z-50 transform transition-transform duration-1000 ease-in-out ${isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
-            }`}
+          className={`md:hidden flex flex-col space-y-6 text-start bg-black min-h-screen rounded-lg p-8 fixed w-full left-0 z-50 transform transition-transform duration-1000 ease-in-out ${
+            isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
+          }`}
         >
           {navItems.map((item, idx) => (
             <div key={idx}>
               <Link
                 to={item.path}
-                className={`text-[18px] hover:text-[#64C4FF] transition-colors duration-300 ${location.pathname === item.path
+                className={`text-[18px] hover:text-[#64C4FF] transition-colors duration-300 ${
+                  location.pathname === item.path
                     ? "text-blue-500 font-bold" // Active state
                     : "text-white"
-                  }`}
+                }`}
                 onClick={closeMobileMenu}
               >
                 {item.name}
