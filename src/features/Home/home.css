@@ -48,7 +48,7 @@
   @media (min-width: 640px) {
       font-size: 18px;
   }
-  line-height: 1.25; /* Adjusted for 5px spacing */
+  line-height: 1; /* Adjusted for 5px spacing */
   letter-spacing: -0.5px; /* Tight tracking */
 }
 

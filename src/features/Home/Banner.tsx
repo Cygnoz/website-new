@@ -54,12 +54,12 @@ function Banner() {
 
           {/* Title */}
           <h1 className="text-2xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight mb-4 font-extralight">
-            Empowering Businesses with <br />
-            <span className="bg-gradient-to-r from-[#45B4FF] via-[#BAFFED] to-[#84CCFF] bg-clip-text text-transparent font-black">Next-Gen Technology</span>
+          Enabling Business to Thrive with  <br />
+            <span className="bg-gradient-to-r from-[#45B4FF] via-[#BAFFED] to-[#84CCFF] bg-clip-text text-transparent font-black">Advanced technology</span>
           </h1>
 
           {/* Subtitle */}
-          <p className="text-xs sm:text-sm md:text-base lg:text-lg text-[#FFFFFF] text-opacity-80 max-w-sm sm:max-w-md md:max-w-xl lg:max-w-3xl mb-6">Harness the power of AI, data, and cloud to lead your industry</p>
+          <p className="text-xs sm:text-sm md:text-base lg:text-lg text-[#FFFFFF] text-opacity-80 max-w-sm sm:max-w-md md:max-w-xl lg:max-w-3xl mb-6">Tap into the strength of artificial intelligence, data, and cloud technology to revolutionize your industry</p>
 
           {/* Call-to-Action */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">

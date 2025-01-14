@@ -33,12 +33,12 @@ function Home({ }: Props) {
     {
       icon: cloud,
       p1: "Cloud Engineering",
-      p2: "Cloud Engineering design and manages scalable, secure, and efficient solutions ",
+      p2: "Cloud Engineering designs and manages scalable, secure, and efficient solutions",
     },
     {
       icon: mobile,
       p1: "Mobile App Engineering",
-      p2: "Our mobile application engineering services deliver robust and scalable apps",
+      p2: "Our mobile application engineering services provide robust and scalable apps",
     },
     {
       icon: analytics,
@@ -48,12 +48,12 @@ function Home({ }: Props) {
     {
       icon: cyber,
       p1: "Cyber Security",
-      p2: "Our cybersecurity engineering services fortify businesses against emerging threats",
+      p2: "Our cybersecurity engineering services strengthen businesses against emerging threats",
     },
     {
       icon: Digital,
       p1: "Digital Business",
-      p2: "By taking our digital marketing services, our clients will be able to increase visibility and engage with their customers at the online platform.",
+      p2: "By using our digital marketing services, our clients can enhance their visibility and effectively engage with their customers on online platforms",
     },
   ];
 
@@ -81,9 +81,9 @@ function Home({ }: Props) {
                   <span className="text-[#6FB7FF] text-[14px] font-[12px] py-2">
                     ABOUT US
                   </span>
-                </p>             
+                </p>
                 <h1 className="text-[#3E4F65] text-[32px] sm:text-[40px] md:text-[50px] font-regular py-2.5">
-                  Why Companies Choose Cygnoz
+                  What we are
                 </h1>
                 <p className="text-[#6F7B8A] text-[16px] sm:text-[18px] md:text-[20px] font-medium py-3">
                   Cygnoz is a Tier 1 global software solutions company
@@ -187,7 +187,7 @@ function Home({ }: Props) {
               </p>
             </div>
             <h1 className="text-[#3E4F65] text-center text-[32px] sm:text-[40px] md:text-[50px] font-regular leading-tigh py-2.5">
-              Empower Your Journey with our <br />
+              Empower Your Business Success with our <br />
               Seamless Solutions
             </h1>
             <p className="text-[#6F7B8A] text-center text-[16px] sm:text-[18px] font-400 py-3">
@@ -233,10 +233,7 @@ function Home({ }: Props) {
                 </div>
                 <div className="text-[#E3E3E3]">
                   <p className=" w-full text-[16px] sm:text-[18px] leading-6 md:text-[20px] py-12 font-thin">
-                    We help you to build high-quality digital solutions and
-                    products as well as deliver a wide range of related
-                    professional services. We are providing world-class service
-                    to our clients.
+                    We help you build high-quality digital solutions and products, as well as deliver a wide range of related professional services. We provide world-class service to our clients.
                   </p>
                 </div>
                 <div className="service-card">
@@ -244,9 +241,8 @@ function Home({ }: Props) {
                   <p className="title text-[#E7E7E7] text-[20px] sm:text-[24px] py-2">
                     Full Stack Engineering
                   </p>
-                  <p className="description text-gray-400 text-[16px] sm:text-[18px] font-medium  leading-5 tracking-tight">
-                    Our custom web development covers front-end, back-end, and
-                    enterprise solutions—ready for any challenge.
+                  <p className="description text-gray-400 text-[16px] sm:text-[16px] font-medium  leading-5 tracking-tight">
+                    Our custom web development services encompass front-end, back-end, and enterprise solutions—designed to tackle any challenge.
                   </p>
                 </div>
               </div>
@@ -284,7 +280,7 @@ function Home({ }: Props) {
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
               width: "100%",
-              height:"auto",
+              height: "auto",
             }}
           >
             <div className="flex justify-center items-center gap-2">
@@ -295,12 +291,11 @@ function Home({ }: Props) {
             </div>
 
             <h1 className="text-[#3E4F65] text-center text-[25px] md:text-[30px] lg:text-[40px] font-regular py-2.5">
-              How We Build Your Solutions
+              Our Process for Crafting Customized Solutions
             </h1>
 
             <p className="text-[#6F7B8A] text-center text-sm md:text-base lg:text-[18px] font-medium py-3">
-              Our rigorous development process ensures the delivery of
-              high-quality, reliable, and efficient software solutions.
+              Our thorough development process guarantees the delivery of high-quality, reliable, and efficient software solutions
             </p>
 
             <div className="pt-5">

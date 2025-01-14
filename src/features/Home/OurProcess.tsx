@@ -20,19 +20,19 @@ function OurProcess({ }: Props) {
         {
             icon: business,
             p1: "Business Requirement Gathering",
-            p2: "In-depth discussions with stakeholders to understand their business needs, pain points, and goals",
+            p2: "Conducting in-depth discussions with stakeholders to fully understand their business needs, challenges, and objectives. ",
             icon1: "",
         },
         {
             icon: stream,
             p1: `Streamlined Development and Deployment Process`,
-            p2: "Creating interactive prototypes to simulate user interactions and test the usability of the design.",
+            p2: "Our deployment process is designed to ensure the smooth and efficient delivery of your application",
             icon1: reactandnode,
         },
         {
             icon: auto,
             p1: "Automating Your Development Workflow with CI/CD",
-            p2: "Streamline your development process and ensure consistent, high-quality deployments with our automated CI/CD pipeline.",
+            p2: "Streamline your development process and ensure consistent, high-quality deployments through our automated CI/CD pipeline",
             icon1: Automatingeg,
         },
         {
@@ -47,19 +47,19 @@ function OurProcess({ }: Props) {
         {
             icon: Discovery,
             p1: "Discovery Phase, UI Design & Prototype",
-            p2: "Creating interactive prototypes to simulate user interactions and test the usability of the design.",
+            p2: "Creating interactive prototypes to simulate user interactions and test the design's usability",
             icon1: uieg,
         },
         {
             icon: Building,
             p1: "Building a Robust Database Foundation",
-            p2: "A well-structured database is essential for any successful application.",
+            p2: "A well-structured database is essential for any successful application",
             icon1: "",
         },
         {
             icon: Fortifying,
             p1: "Fortifying Your Application with Security Testing",
-            p2: "Protect your application from vulnerabilities and attacks with our comprehensive security testing process.",
+            p2: "Safeguard your application against vulnerabilities and attacks with our comprehensive security testing process",
             icon1: "",
         },
         {

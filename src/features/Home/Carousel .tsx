@@ -56,8 +56,7 @@ const Carousel = () => {
 
                             <div className="div2-billbizz flex flex-col sm:flex-row justify-between sm:items-end ">
                                 <p className="text-[#6F7B8A] text-[16px] sm:text-[18px]">
-                                    Intelligent billing, automated workflows. Save time, reduce errors.
-                                </p>
+                                Streamline operation with Inteligent billing and workflows-Save time, Reduce error.                                </p>
                                 <div className="text-end">
                                     <button className="underline w-32 text-[#0380CE] mt-2 sm:mt-0">
                                         See More
