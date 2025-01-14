@@ -8,7 +8,7 @@ import { Link } from "react-router-dom"
 function Banner() {
   return (
     <>
-      <div className="relative w-full h-[830px] lg:h-[730px] overflow-hidden">
+      <div className="relative w-full h-[830px] lg:h-screen overflow-hidden">
         {/* Gradient Background */}
         <div className="absolute inset-0">
           <video
@@ -43,7 +43,7 @@ function Banner() {
         ></div>
 
         {/* Content Layer */}
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center   text-white z-20">
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center pt-10  text-white z-20">
           {/* Tagline */}
 
           <button className="button">
@@ -53,7 +53,7 @@ function Banner() {
           </button>
 
           {/* Title */}
-          <h1 className="text-2xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight mb-4 font-extralight">
+          <h1 className="text-2xl sm:text-5xl md:text-6xl lg:text-7xl py-2 leading-tight mb-4 font-extralight">
           Enabling Business to Thrive with  <br />
             <span className="bg-gradient-to-r from-[#45B4FF] via-[#BAFFED] to-[#84CCFF] bg-clip-text text-transparent font-black">Advanced technology</span>
           </h1>
@@ -64,7 +64,7 @@ function Banner() {
           {/* Call-to-Action */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
             <Link to={'/contact'}>
-            <button className="bg-[#0099F8] text-white px-4 sm:px-8 py-3 rounded-full text-xs sm:text-sm md:text-base font-medium hover:bg-blue-400 transition">Contact Us</button>
+            <button className="bg-[#0099F8] text-white px-4 sm:px-12 py-3 rounded-full text-xs sm:text-sm md:text-base font-regular hover:bg-blue-400 transition">Contact Us</button>
             </Link>
 
             {/* Trust Section */}

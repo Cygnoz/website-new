@@ -63,7 +63,7 @@ const ContactPage = () => {
             </div>
           </div>
 
-          <div className="p-8 flex flex-col lg:flex-row gap-8">
+          <div className="p-8 flex flex-col lg:flex-row 2xl:grid grid-cols-2 gap-8">
             <div className=" ">
               <img src={contactimg} alt="Contact" loading="lazy" className="" />
             </div>

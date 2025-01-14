@@ -22,7 +22,7 @@ function Careers() {
       <BackgroundGrid width="100%" height="100%" />
 
       <div className="mx-5">
-        <div className="block md:flex gap-12 p-4">
+        <div className="block md:flex 2xl:grid grid-cols-2  gap-12 p-4">
           {/* Left Section */}
           <div className="">
             <div className="p-4 mt-5 flex w-full">

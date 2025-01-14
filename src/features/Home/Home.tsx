@@ -63,7 +63,7 @@ function Home({ }: Props) {
       <div className="">
         {/* About Us Section */}
         <section>
-          <div
+          <div className=""
             style={{
               backgroundImage: `url(${backgroundImg})`,
               backgroundSize: "cover",
