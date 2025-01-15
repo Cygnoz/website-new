@@ -73,7 +73,7 @@ function Home({ }: Props) {
               height: "auto",
             }}
           >
-            <div className="px-5 sm:px-10 md:px-20 py-16 flex flex-col lg:flex-row">
+            <div className="px-5  sm:px-10 md:px-20 py-16 flex flex-col lg:flex-row">
               {/* Left Section */}
               <div className="w-full lg:w-[60%] mb-10 lg:mb-0">
                 <p className="flex gap-2 mt-8">

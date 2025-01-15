@@ -391,11 +391,12 @@
 /* about us */
 .hover2 img {
   position: absolute;
-  top: 950px;
-  bottom: 0%;
-  left: 66%;
+  top: calc(75% + 400px); /* Dynamic positioning relative to the container */
+  left: calc(52% + 200px); /* Adjust left dynamically */
+  transform: translate(-50%, -50%); /* Center the element */
   transition: all 0.3s ease-in-out;
 }
+
 .hoverframe1 img {
   transition: all 0.3s ease-in-out;
 }
@@ -436,12 +437,9 @@
 }
 
 .rightsection:hover .hover2 img {
-    top: 1025px; /* Smooth position change */
-    top: 1010px;
-    bottom: 0%;
-    left: 61.5%;
-    transform: rotate(55deg); /* Smooth rotation */
-
+  top: calc(85% + 400px); /* Dynamic positioning relative to the container */
+  left: calc(48.5% + 200px); /* Adjust left dynamically */
+  transform: translate(-50%, -50%) rotate(55deg); /* Add rotation with smooth transition */
 }
 
 .rightsection:hover .hoverframe1 img {
